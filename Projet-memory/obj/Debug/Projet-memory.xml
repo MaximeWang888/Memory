@@ -27,5 +27,31 @@ Projet-memory
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="F:Projet_memory.Jouer.temps">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="M:Projet_memory.Jouer.Form2_Load(System.Object,System.EventArgs)">
+ <summary>
+ 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Projet_memory.Jouer.Timer1_Tick(System.Object,System.EventArgs)">
+ <summary>
+ 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Projet_memory.Jouer.Button_Abandon_Click(System.Object,System.EventArgs)">
+ <summary>
+ 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
 </members>
 </doc>

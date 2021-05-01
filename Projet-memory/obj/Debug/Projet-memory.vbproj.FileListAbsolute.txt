@@ -15,11 +15,11 @@ C:\Users\china\OneDrive\Bureau\INFO\Bases de l'informatique\Projets\Projet Progr
 C:\Users\china\OneDrive\Bureau\INFO\Bases de l'informatique\Projets\Projet Programmation\Projet Memory\Memory\Projet-memory\bin\Debug\Projet-memory.pdb
 C:\Users\china\OneDrive\Bureau\INFO\Bases de l'informatique\Projets\Projet Programmation\Projet Memory\Memory\Projet-memory\bin\Debug\Projet-memory.xml
 C:\Users\china\OneDrive\Bureau\INFO\Bases de l'informatique\Projets\Projet Programmation\Projet Memory\Memory\Projet-memory\obj\Debug\Projet-memory.vbprojAssemblyReference.cache
-C:\Users\china\OneDrive\Bureau\INFO\Bases de l'informatique\Projets\Projet Programmation\Projet Memory\Memory\Projet-memory\obj\Debug\Projet_memory.Form1.resources
 C:\Users\china\OneDrive\Bureau\INFO\Bases de l'informatique\Projets\Projet Programmation\Projet Memory\Memory\Projet-memory\obj\Debug\Projet_memory.Resources.resources
 C:\Users\china\OneDrive\Bureau\INFO\Bases de l'informatique\Projets\Projet Programmation\Projet Memory\Memory\Projet-memory\obj\Debug\Projet-memory.vbproj.GenerateResource.cache
 C:\Users\china\OneDrive\Bureau\INFO\Bases de l'informatique\Projets\Projet Programmation\Projet Memory\Memory\Projet-memory\obj\Debug\Projet-memory.vbproj.CoreCompileInputs.cache
 C:\Users\china\OneDrive\Bureau\INFO\Bases de l'informatique\Projets\Projet Programmation\Projet Memory\Memory\Projet-memory\obj\Debug\Projet-memory.exe
 C:\Users\china\OneDrive\Bureau\INFO\Bases de l'informatique\Projets\Projet Programmation\Projet Memory\Memory\Projet-memory\obj\Debug\Projet-memory.xml
 C:\Users\china\OneDrive\Bureau\INFO\Bases de l'informatique\Projets\Projet Programmation\Projet Memory\Memory\Projet-memory\obj\Debug\Projet-memory.pdb
-C:\Users\china\OneDrive\Bureau\INFO\Bases de l'informatique\Projets\Projet Programmation\Projet Memory\Memory\Projet-memory\obj\Debug\Projet_memory.Form2.resources
+C:\Users\china\OneDrive\Bureau\INFO\Bases de l'informatique\Projets\Projet Programmation\Projet Memory\Memory\Projet-memory\obj\Debug\Projet_memory.Memory.resources
+C:\Users\china\OneDrive\Bureau\INFO\Bases de l'informatique\Projets\Projet Programmation\Projet Memory\Memory\Projet-memory\obj\Debug\Projet_memory.Jouer.resources

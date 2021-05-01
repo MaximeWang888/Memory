@@ -1,12 +1,13 @@
-﻿Public Class Form1
+﻿Public Class Memory
     Private Sub Button_Quitter_Click(sender As Object, e As EventArgs) Handles ButtonQuitter.Click
-        Dim res As Integer = MsgBox("Voulez vous quittez", vbQuestion + vbYesNo + vbDefaultButton2, "Quitter")
+        Dim res As Integer = MsgBox("Voulez vous quitter l'application ?", vbQuestion + vbYesNo + vbDefaultButton2, "Quitter")
 
         If res = 6 Then
             End
         ElseIf res = 7 Then
 
         End If
+
     End Sub
 
     Private Sub Label_Nom_TextChanged(sender As Object, e As EventArgs) Handles Label_Nom.TextChanged
@@ -17,8 +18,13 @@
     End Sub
 
     Private Sub Button_Jouer_Click(sender As Object, e As EventArgs) Handles Button_Jouer.Click
-        Form2.Label_NomDuJoueur.Text = Me.Label_Nom.Text
+        Jouer.Label_NomDuJoueur.Text = Me.Label_Nom.Text
+
         Me.Hide()
-        Form2.Show()
+        Jouer.Show()
+    End Sub
+
+    Private Sub Memory_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Me.Text = "Memory"
     End Sub
 End Class
