@@ -19,12 +19,20 @@
 
     Private Sub Button_Jouer_Click(sender As Object, e As EventArgs) Handles Button_Jouer.Click
         Jouer.Label_NomDuJoueur.Text = Me.Label_Nom.Text
+        If Label_Nom.TextLength < 3 Then
+            Label_Nom.ForeColor = Color.Red
+        Else
+            Label_Nom.ForeColor = Color.Black
+            Me.Hide()
+            Jouer.Show()
+        End If
 
-        Me.Hide()
-        Jouer.Show()
     End Sub
 
     Private Sub Memory_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Me.Text = "Memory"
+        ComboBox1.DropDownStyle = ComboBoxStyle.DropDownList
+        ComboBox1.Items.Add("blabla")
     End Sub
+
 End Class
