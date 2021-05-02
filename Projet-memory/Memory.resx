@@ -148,7 +148,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label_Entrezvotrenom.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="Button_Jouer.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -178,7 +178,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Button_Jouer.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="ButtonOptions.Location" type="System.Drawing.Point, System.Drawing">
     <value>285, 299</value>
@@ -205,7 +205,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ButtonOptions.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="ButtonScores.Location" type="System.Drawing.Point, System.Drawing">
     <value>285, 358</value>
@@ -232,7 +232,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ButtonScores.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="ButtonQuitter.Location" type="System.Drawing.Point, System.Drawing">
     <value>285, 414</value>
@@ -259,30 +259,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ButtonQuitter.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="Label_Nom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>252, 166</value>
-  </data>
-  <data name="Label_Nom.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="Label_Nom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>309, 22</value>
-  </data>
-  <data name="Label_Nom.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;Label_Nom.Name" xml:space="preserve">
-    <value>Label_Nom</value>
-  </data>
-  <data name="&gt;&gt;Label_Nom.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label_Nom.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Label_Nom.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
@@ -363,23 +339,14 @@
   <data name="&gt;&gt;ContextMenuStrip1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ComboBox1.Items" xml:space="preserve">
-    <value>jodej</value>
-  </data>
-  <data name="ComboBox1.Items1" xml:space="preserve">
-    <value>zadzadaz</value>
-  </data>
   <data name="ComboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>302, 195</value>
+    <value>268, 169</value>
   </data>
   <data name="ComboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 24</value>
+    <value>235, 24</value>
   </data>
   <data name="ComboBox1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
-  </data>
-  <data name="ComboBox1.Text" xml:space="preserve">
-    <value>rrer</value>
   </data>
   <data name="&gt;&gt;ComboBox1.Name" xml:space="preserve">
     <value>ComboBox1</value>
@@ -391,7 +358,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ComboBox1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

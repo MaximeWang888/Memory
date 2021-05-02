@@ -29,7 +29,6 @@ Partial Class Memory
         Me.ButtonOptions = New System.Windows.Forms.Button()
         Me.ButtonScores = New System.Windows.Forms.Button()
         Me.ButtonQuitter = New System.Windows.Forms.Button()
-        Me.Label_Nom = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
@@ -65,11 +64,6 @@ Partial Class Memory
         Me.ButtonQuitter.Name = "ButtonQuitter"
         Me.ButtonQuitter.UseVisualStyleBackColor = True
         '
-        'Label_Nom
-        '
-        resources.ApplyResources(Me.Label_Nom, "Label_Nom")
-        Me.Label_Nom.Name = "Label_Nom"
-        '
         'Label2
         '
         resources.ApplyResources(Me.Label2, "Label2")
@@ -89,7 +83,6 @@ Partial Class Memory
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {resources.GetString("ComboBox1.Items"), resources.GetString("ComboBox1.Items1")})
         resources.ApplyResources(Me.ComboBox1, "ComboBox1")
         Me.ComboBox1.Name = "ComboBox1"
         '
@@ -101,7 +94,6 @@ Partial Class Memory
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label_Nom)
         Me.Controls.Add(Me.ButtonQuitter)
         Me.Controls.Add(Me.ButtonScores)
         Me.Controls.Add(Me.ButtonOptions)
@@ -118,7 +110,6 @@ Partial Class Memory
     Friend WithEvents ButtonOptions As Button
     Friend WithEvents ButtonScores As Button
     Friend WithEvents ButtonQuitter As Button
-    Friend WithEvents Label_Nom As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
