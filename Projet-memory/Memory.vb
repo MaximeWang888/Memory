@@ -55,6 +55,13 @@
         If ComboBox1.Text.Length >= 1 Then
             Button_Jouer.Enabled = True
             ComboBox1.MaxLength = 12
+        ElseIf ComboBox1.Text.Length < 1 Then
+            Button_Jouer.Enabled = False
         End If
     End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
 End Class

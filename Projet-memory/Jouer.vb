@@ -3,7 +3,11 @@ Public Class Jouer
     ''' <summary>
     ''' 
     ''' </summary>
-    Dim temps As Date = #00:01:00#
+    Dim minute As Integer = 1
+    Dim test As String = "#00:01:20#"
+    Dim temps As Date = test
+
+    'DateInterval.minute = 
 
     ''' <summary>
     '''  
@@ -13,10 +17,10 @@ Public Class Jouer
     Private Sub Jouer_Load(sender As Object, e As EventArgs) Handles Me.Shown
         Me.Label_TempsRestant.Text = Format(temps, "mm:ss")
         Label_NomDuJoueur.Text = Memory.ComboBox1.Text
-        Button_ArreterTimer.Text = "Arrêter"
+        Button_ArreterTimer.Text = "Pause"
         Button_ReprendreTimer.Text = "Reprendre"
         Timer1.Interval = 1000
-        Timer1.Start()
+        Timer1.Stop()
     End Sub
 
     ''' <summary>
@@ -32,6 +36,7 @@ Public Class Jouer
         End If
         If temps = #00:00:00# Then
             Timer1.Stop()
+            MsgBox("Vous avez perdu")
         End If
     End Sub
 
@@ -76,6 +81,7 @@ Public Class Jouer
     ''' <param name="e"></param>
     Private Sub Voir_LaCarte_Click(sender As Object, e As EventArgs) Handles Label6.Click
         'Thread.Sleep(2000)
+        Timer1.Start()
         Label6.Image = Projet_memory.My.Resources.Resources.Card0
     End Sub
 End Class

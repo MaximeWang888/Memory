@@ -67,11 +67,13 @@ Partial Class Memory
         'Label2
         '
         resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.ForeColor = System.Drawing.SystemColors.WindowText
         Me.Label2.Name = "Label2"
         '
         'Label3
         '
         resources.ApplyResources(Me.Label3, "Label3")
+        Me.Label3.ForeColor = System.Drawing.SystemColors.GrayText
         Me.Label3.Name = "Label3"
         '
         'ContextMenuStrip1

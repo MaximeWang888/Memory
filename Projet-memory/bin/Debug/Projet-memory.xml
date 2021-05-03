@@ -60,7 +60,7 @@ Projet-memory
  <param name="sender"></param>
  <param name="e"></param>
 </member>
-<member name="F:Projet_memory.Jouer.temps">
+<member name="F:Projet_memory.Jouer.minute">
  <summary>
  
  </summary>
