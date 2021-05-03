@@ -83,9 +83,17 @@ Public Class Jouer
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
-    Private Sub Voir_LaCarte_Click(sender As Object, e As EventArgs) Handles Label6.Click
-        'Thread.Sleep(2000)
+    Private Sub Voir_LaCarte_Click(sender As Object, e As EventArgs) Handles PictureBox_1.Click
         Timer1.Start()
-        Label6.Image = Projet_memory.My.Resources.Resources.Card0
+        For i As Integer = 0 To 1
+            MsgBox("La carte va se retourner, reste vif !")
+            PictureBox_1.Image = Projet_memory.My.Resources.Resources.Card0
+            Thread.Sleep(3000)
+            MsgBox("Hop les 3 secondes passés")
+            PictureBox_1.Image = Projet_memory.My.Resources.Resources.BackCard
+        Next
+
     End Sub
+
+
 End Class

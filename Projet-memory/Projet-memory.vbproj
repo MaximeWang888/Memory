@@ -73,10 +73,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Score.Designer.vb">
+      <DependentUpon>Score.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form1.vb">
+    <Compile Include="Score.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Memory.vb">
@@ -109,8 +109,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Score.resx">
+      <DependentUpon>Score.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Memory.resx">
       <DependentUpon>Memory.vb</DependentUpon>

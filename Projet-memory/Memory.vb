@@ -64,8 +64,8 @@
         End If
     End Sub
 
-    Private Sub ButtonOptions_Click(sender As Object, e As EventArgs) Handles ButtonOptions.Click
+    Private Sub ButtonScores_Click(sender As Object, e As EventArgs) Handles ButtonScores.Click
         Me.Hide()
-        Form1.Show()
+        Score.Show()
     End Sub
 End Class
