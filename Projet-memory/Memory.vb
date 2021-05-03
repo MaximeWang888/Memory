@@ -23,7 +23,9 @@
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub Button_Jouer_Click(sender As Object, e As EventArgs) Handles Button_Jouer.Click
-        ComboBox1.Items.Add(ComboBox1.Text)
+        If Not ComboBox1.Items.Contains(ComboBox1.Text) AndAlso ComboBox1.Text.Length > 2 Then
+            ComboBox1.Items.Add(ComboBox1.Text)
+        End If
         Jouer.Label_NomDuJoueur.Text = Me.ComboBox1.Text
         If ComboBox1.Text.Length < 3 Then
             ComboBox1.ForeColor = Color.Red

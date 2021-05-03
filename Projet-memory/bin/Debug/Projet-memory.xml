@@ -27,6 +27,11 @@ Projet-memory
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Projet_memory.My.Resources.Resources.Card0">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="M:Projet_memory.Memory.Button_Quitter_Click(System.Object,System.EventArgs)">
  <summary>
  
@@ -60,23 +65,44 @@ Projet-memory
  
  </summary>
 </member>
-<member name="M:Projet_memory.Jouer.Form2_Load(System.Object,System.EventArgs)">
+<member name="M:Projet_memory.Jouer.Jouer_Load(System.Object,System.EventArgs)">
  <summary>
- 
+  
  </summary>
  <param name="sender"></param>
  <param name="e"></param>
 </member>
 <member name="M:Projet_memory.Jouer.Timer1_Tick(System.Object,System.EventArgs)">
  <summary>
- 
+ Traitement du timer d'une partie de jeu Memory
  </summary>
  <param name="sender"></param>
  <param name="e"></param>
 </member>
 <member name="M:Projet_memory.Jouer.Button_Abandon_Click(System.Object,System.EventArgs)">
  <summary>
- 
+ Permet d'abandonner la partie en cours en cliquant sur le button 
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Projet_memory.Jouer.Button_ArreterTimer_Click(System.Object,System.EventArgs)">
+ <summary>
+ Permet d'arrêter le timer en cliquant sur le button
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Projet_memory.Jouer.Button_ReprendreTimer_Click(System.Object,System.EventArgs)">
+ <summary>
+ Permet de reprendre le timer en cliquant sur le button
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+</member>
+<member name="M:Projet_memory.Jouer.Voir_LaCarte_Click(System.Object,System.EventArgs)">
+ <summary>
+ Permet de tourner la carte pour y voir le contenu 
  </summary>
  <param name="sender"></param>
  <param name="e"></param>
