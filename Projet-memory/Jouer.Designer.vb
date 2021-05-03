@@ -28,29 +28,31 @@ Partial Class Jouer
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label_TempsRestant = New System.Windows.Forms.Label()
         Me.Button_Abandon = New System.Windows.Forms.Button()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Button_ArreterTimer = New System.Windows.Forms.Button()
+        Me.Button_ReprendreTimer = New System.Windows.Forms.Button()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label21 = New System.Windows.Forms.Label()
         Me.Label22 = New System.Windows.Forms.Label()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Button_ArreterTimer = New System.Windows.Forms.Button()
-        Me.Button_ReprendreTimer = New System.Windows.Forms.Button()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label16 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -97,140 +99,27 @@ Partial Class Jouer
         Me.Button_Abandon.Text = "Abandon"
         Me.Button_Abandon.UseVisualStyleBackColor = True
         '
-        'Label6
+        'Timer1
         '
-        Me.Label6.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.Label6.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Label6.Location = New System.Drawing.Point(39, 108)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(115, 160)
-        Me.Label6.TabIndex = 29
+        Me.Timer1.Enabled = True
         '
-        'Label2
+        'Button_ArreterTimer
         '
-        Me.Label2.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.Label2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Label2.Location = New System.Drawing.Point(160, 108)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(115, 160)
-        Me.Label2.TabIndex = 30
+        Me.Button_ArreterTimer.Location = New System.Drawing.Point(216, 64)
+        Me.Button_ArreterTimer.Name = "Button_ArreterTimer"
+        Me.Button_ArreterTimer.Size = New System.Drawing.Size(89, 41)
+        Me.Button_ArreterTimer.TabIndex = 49
+        Me.Button_ArreterTimer.Text = "Button1"
+        Me.Button_ArreterTimer.UseVisualStyleBackColor = True
         '
-        'Label4
+        'Button_ReprendreTimer
         '
-        Me.Label4.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.Label4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Label4.Location = New System.Drawing.Point(281, 108)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(115, 160)
-        Me.Label4.TabIndex = 31
-        '
-        'Label5
-        '
-        Me.Label5.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.Label5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Label5.Location = New System.Drawing.Point(402, 108)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(115, 160)
-        Me.Label5.TabIndex = 32
-        '
-        'Label7
-        '
-        Me.Label7.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.Label7.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Label7.Location = New System.Drawing.Point(523, 108)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(115, 160)
-        Me.Label7.TabIndex = 33
-        '
-        'Label8
-        '
-        Me.Label8.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.Label8.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Label8.Location = New System.Drawing.Point(523, 268)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(115, 160)
-        Me.Label8.TabIndex = 38
-        '
-        'Label9
-        '
-        Me.Label9.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.Label9.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Label9.Location = New System.Drawing.Point(402, 268)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(115, 160)
-        Me.Label9.TabIndex = 37
-        '
-        'Label10
-        '
-        Me.Label10.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.Label10.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Label10.Location = New System.Drawing.Point(281, 268)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(115, 160)
-        Me.Label10.TabIndex = 36
-        '
-        'Label11
-        '
-        Me.Label11.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.Label11.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Label11.Location = New System.Drawing.Point(160, 268)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(115, 160)
-        Me.Label11.TabIndex = 35
-        '
-        'Label12
-        '
-        Me.Label12.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.Label12.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Label12.Location = New System.Drawing.Point(39, 268)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(115, 160)
-        Me.Label12.TabIndex = 34
-        '
-        'Label13
-        '
-        Me.Label13.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.Label13.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Label13.Location = New System.Drawing.Point(523, 428)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(115, 160)
-        Me.Label13.TabIndex = 43
-        '
-        'Label14
-        '
-        Me.Label14.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.Label14.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Label14.Location = New System.Drawing.Point(402, 428)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(115, 160)
-        Me.Label14.TabIndex = 42
-        '
-        'Label15
-        '
-        Me.Label15.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.Label15.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Label15.Location = New System.Drawing.Point(281, 428)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(115, 160)
-        Me.Label15.TabIndex = 41
-        '
-        'Label16
-        '
-        Me.Label16.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.Label16.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Label16.Location = New System.Drawing.Point(160, 428)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(115, 160)
-        Me.Label16.TabIndex = 40
-        '
-        'Label17
-        '
-        Me.Label17.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.Label17.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
-        Me.Label17.Location = New System.Drawing.Point(39, 428)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(115, 160)
-        Me.Label17.TabIndex = 39
+        Me.Button_ReprendreTimer.Location = New System.Drawing.Point(349, 64)
+        Me.Button_ReprendreTimer.Name = "Button_ReprendreTimer"
+        Me.Button_ReprendreTimer.Size = New System.Drawing.Size(93, 41)
+        Me.Button_ReprendreTimer.TabIndex = 50
+        Me.Button_ReprendreTimer.Text = "Button2"
+        Me.Button_ReprendreTimer.UseVisualStyleBackColor = True
         '
         'Label18
         '
@@ -277,34 +166,158 @@ Partial Class Jouer
         Me.Label22.Size = New System.Drawing.Size(115, 160)
         Me.Label22.TabIndex = 44
         '
-        'Timer1
+        'Label13
         '
-        Me.Timer1.Enabled = True
+        Me.Label13.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.Label13.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Label13.Location = New System.Drawing.Point(523, 428)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(115, 160)
+        Me.Label13.TabIndex = 43
         '
-        'Button_ArreterTimer
+        'Label14
         '
-        Me.Button_ArreterTimer.Location = New System.Drawing.Point(216, 64)
-        Me.Button_ArreterTimer.Name = "Button_ArreterTimer"
-        Me.Button_ArreterTimer.Size = New System.Drawing.Size(89, 41)
-        Me.Button_ArreterTimer.TabIndex = 49
-        Me.Button_ArreterTimer.Text = "Button1"
-        Me.Button_ArreterTimer.UseVisualStyleBackColor = True
+        Me.Label14.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.Label14.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Label14.Location = New System.Drawing.Point(402, 428)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(115, 160)
+        Me.Label14.TabIndex = 42
         '
-        'Button_ReprendreTimer
+        'Label15
         '
-        Me.Button_ReprendreTimer.Location = New System.Drawing.Point(349, 64)
-        Me.Button_ReprendreTimer.Name = "Button_ReprendreTimer"
-        Me.Button_ReprendreTimer.Size = New System.Drawing.Size(93, 41)
-        Me.Button_ReprendreTimer.TabIndex = 50
-        Me.Button_ReprendreTimer.Text = "Button2"
-        Me.Button_ReprendreTimer.UseVisualStyleBackColor = True
+        Me.Label15.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.Label15.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Label15.Location = New System.Drawing.Point(281, 428)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(115, 160)
+        Me.Label15.TabIndex = 41
+        '
+        'Label16
+        '
+        Me.Label16.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.Label16.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Label16.Location = New System.Drawing.Point(160, 428)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(115, 160)
+        Me.Label16.TabIndex = 40
+        '
+        'Label17
+        '
+        Me.Label17.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.Label17.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Label17.Location = New System.Drawing.Point(39, 428)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(115, 160)
+        Me.Label17.TabIndex = 39
+        '
+        'Label8
+        '
+        Me.Label8.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.Label8.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Label8.Location = New System.Drawing.Point(523, 268)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(115, 160)
+        Me.Label8.TabIndex = 38
+        '
+        'Label9
+        '
+        Me.Label9.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.Label9.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Label9.Location = New System.Drawing.Point(402, 268)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(115, 160)
+        Me.Label9.TabIndex = 37
+        '
+        'Label10
+        '
+        Me.Label10.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.Label10.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Label10.Location = New System.Drawing.Point(281, 268)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(115, 160)
+        Me.Label10.TabIndex = 36
+        '
+        'Label11
+        '
+        Me.Label11.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.Label11.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Label11.Location = New System.Drawing.Point(160, 268)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(115, 160)
+        Me.Label11.TabIndex = 35
+        '
+        'Label12
+        '
+        Me.Label12.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.Label12.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Label12.Location = New System.Drawing.Point(39, 268)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(115, 160)
+        Me.Label12.TabIndex = 34
+        '
+        'Label7
+        '
+        Me.Label7.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.Label7.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Label7.Location = New System.Drawing.Point(523, 108)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(115, 160)
+        Me.Label7.TabIndex = 33
+        '
+        'Label5
+        '
+        Me.Label5.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.Label5.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Label5.Location = New System.Drawing.Point(402, 108)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(115, 160)
+        Me.Label5.TabIndex = 32
+        '
+        'Label4
+        '
+        Me.Label4.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.Label4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Label4.Location = New System.Drawing.Point(281, 108)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(115, 160)
+        Me.Label4.TabIndex = 31
+        '
+        'Label2
+        '
+        Me.Label2.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.Label2.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Label2.Location = New System.Drawing.Point(160, 108)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(115, 160)
+        Me.Label2.TabIndex = 30
+        '
+        'Label6
+        '
+        Me.Label6.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.Label6.ImageAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.Label6.Location = New System.Drawing.Point(39, 108)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(115, 160)
+        Me.Label6.TabIndex = 29
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.PictureBox1.Location = New System.Drawing.Point(684, 138)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(114, 162)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 51
+        Me.PictureBox1.TabStop = False
         '
         'Jouer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(676, 790)
+        Me.ClientSize = New System.Drawing.Size(902, 790)
         Me.ControlBox = False
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button_ReprendreTimer)
         Me.Controls.Add(Me.Button_ArreterTimer)
         Me.Controls.Add(Me.Label18)
@@ -334,6 +347,7 @@ Partial Class Jouer
         Me.Controls.Add(Me.Label1)
         Me.Name = "Jouer"
         Me.Text = "Memory"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -367,4 +381,5 @@ Partial Class Jouer
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Button_ArreterTimer As Button
     Friend WithEvents Button_ReprendreTimer As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

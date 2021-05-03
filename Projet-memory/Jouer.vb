@@ -3,7 +3,6 @@ Public Class Jouer
     ''' <summary>
     ''' 
     ''' </summary>
-    Dim minute As Integer = 1
     Dim test As String = "#00:01:20#"
     Dim temps As Date = test
 
@@ -46,13 +45,18 @@ Public Class Jouer
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub Button_Abandon_Click(sender As Object, e As EventArgs) Handles Button_Abandon.Click
-        Dim res As Integer = MsgBox("Voulez vous abandonner la partie en cours ?", vbQuestion + vbYesNo + vbDefaultButton2)
+        Me.Close()
+        Memory.Show()
+    End Sub
 
-        If res = 6 Then
-            Me.Close()
-            Memory.Show()
-        ElseIf res = 7 Then
-
+    ''' <summary>
+    ''' 
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    Private Sub Form_MemoryClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        If MsgBox("Voulez vous abandonner la partie en cours ?", vbQuestion + vbYesNo + vbDefaultButton2, "Abandon") = vbNo Then
+            e.Cancel = True
         End If
     End Sub
 

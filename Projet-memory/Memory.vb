@@ -7,14 +7,18 @@
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub Button_Quitter_Click(sender As Object, e As EventArgs) Handles ButtonQuitter.Click
-        Dim res As Integer = MsgBox("Voulez vous quitter l'application ?", vbQuestion + vbYesNo + vbDefaultButton2, "Quitter")
+        Me.Close()
+    End Sub
 
-        If res = 6 Then
-            End
-        ElseIf res = 7 Then
-
+    ''' <summary>
+    ''' 
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
+    Private Sub Form_MemoryClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        If MsgBox("Voulez vous quitter l'application ?", vbQuestion + vbYesNo + vbDefaultButton2, "Quitter") = vbNo Then
+            e.Cancel = True
         End If
-
     End Sub
 
     ''' <summary>
@@ -60,8 +64,8 @@
         End If
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
+    Private Sub ButtonOptions_Click(sender As Object, e As EventArgs) Handles ButtonOptions.Click
+        Me.Hide()
+        Form1.Show()
     End Sub
-
 End Class
