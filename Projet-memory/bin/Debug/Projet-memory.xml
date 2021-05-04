@@ -22,12 +22,62 @@ Projet-memory
   les recherches de ressources à l'aide de cette classe de ressource fortement typée.
 </summary>
 </member>
+<member name="P:Projet_memory.My.Resources.Resources.AliceAuPaysDesMerveilles">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.AliceAuPaysDesMerveilles1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.AliceAuPaysDesMerveilles2">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Projet_memory.My.Resources.Resources.BackCard">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Projet_memory.My.Resources.Resources.Capture">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.Capture1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.Capture2">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.Capture3">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.Capture4">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Projet_memory.My.Resources.Resources.Card0">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.FondDessinAnimé">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.table">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>

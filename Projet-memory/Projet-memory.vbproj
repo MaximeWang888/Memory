@@ -152,5 +152,14 @@
   <ItemGroup>
     <None Include="Card0.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AliceAuPaysDesMerveilles.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FondDessinAnimé.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

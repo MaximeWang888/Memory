@@ -8,7 +8,7 @@ Public Class Jouer
     Dim temps As Date
     Private Sub Jouer_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
         TempsPartie = "#00:" & Paramettre.TextBoxMinute.Text & ":" & Paramettre.TextBoxSecond.Text & "#"
-        'temps = TempsPartie
+        temps = TempsPartie
     End Sub
 
     'DateInterval.minute = 
@@ -21,8 +21,6 @@ Public Class Jouer
     Private Sub Jouer_Load(sender As Object, e As EventArgs) Handles Me.Shown
         Me.Label_TempsRestant.Text = Format(temps, "mm:ss")
         Label_NomDuJoueur.Text = Memory.ComboBox1.Text
-        Button_ArreterTimer.Text = "Pause"
-        Button_ReprendreTimer.Text = "Reprendre"
         Timer1.Interval = 1000
         Timer1.Stop()
     End Sub
@@ -100,5 +98,11 @@ Public Class Jouer
 
     End Sub
 
-
+    Private Sub Jouer_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
+        For Each ctl In Me.Controls
+            If TypeOf ctl Is PictureBox Then
+                ctl.Size = New Size(90, 125)
+            End If
+        Next
+    End Sub
 End Class
