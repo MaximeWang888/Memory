@@ -37,3 +37,5 @@ C:\Users\fabie\source\repos\Projet-memory\Memory\Projet-memory\obj\Debug\Projet-
 C:\Users\fabie\source\repos\Projet-memory\Memory\Projet-memory\obj\Debug\Projet-memory.xml
 C:\Users\fabie\source\repos\Projet-memory\Memory\Projet-memory\obj\Debug\Projet-memory.pdb
 C:\Users\china\OneDrive\Bureau\INFO\Bases de l'informatique\Projets\Projet Programmation\Projet Memory\Memory\Projet-memory\obj\Debug\Projet_memory.Score.resources
+C:\Users\fabie\source\repos\Projet-memory\Memory\Projet-memory\obj\Debug\Projet_memory.Score.resources
+C:\Users\fabie\source\repos\Projet-memory\Memory\Projet-memory\obj\Debug\Projet_memory.Paramettre.resources

@@ -68,4 +68,9 @@
         Me.Hide()
         Score.Show()
     End Sub
+
+    Private Sub ButtonOptions_Click(sender As Object, e As EventArgs) Handles ButtonOptions.Click
+        Me.Hide()
+        Paramettre.Show()
+    End Sub
 End Class

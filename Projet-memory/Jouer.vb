@@ -1,10 +1,16 @@
-﻿Imports System.Threading
+﻿Imports System.ComponentModel
+Imports System.Threading
 Public Class Jouer
     ''' <summary>
     ''' 
     ''' </summary>
-    Dim test As String = "#00:01:20#"
-    Dim temps As Date = test
+    Dim TempsPartie As String
+    Dim temps As Date
+    Private Sub Jouer_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
+        TempsPartie = "#00:" & Paramettre.TextBoxMinute.Text & ":" & Paramettre.TextBoxSecond.Text & "#"
+        temps = TempsPartie
+        'temps = "#00:03:00#"
+    End Sub
 
     'DateInterval.minute = 
 

@@ -67,7 +67,7 @@ Projet-memory
  <param name="sender"></param>
  <param name="e"></param>
 </member>
-<member name="F:Projet_memory.Jouer.test">
+<member name="F:Projet_memory.Jouer.TempsPartie">
  <summary>
  
  </summary>
