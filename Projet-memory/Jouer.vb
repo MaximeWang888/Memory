@@ -8,8 +8,7 @@ Public Class Jouer
     Dim temps As Date
     Private Sub Jouer_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
         TempsPartie = "#00:" & Paramettre.TextBoxMinute.Text & ":" & Paramettre.TextBoxSecond.Text & "#"
-        temps = TempsPartie
-        'temps = "#00:03:00#"
+        'temps = TempsPartie
     End Sub
 
     'DateInterval.minute = 
