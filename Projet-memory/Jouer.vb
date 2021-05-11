@@ -1,6 +1,4 @@
-﻿Imports System.ComponentModel
-Imports System.Threading
-Public Class Jouer
+﻿Public Class Jouer
     ''' <summary>
     ''' 
     ''' </summary>
@@ -8,7 +6,14 @@ Public Class Jouer
     Dim temps As Date
     Private Sub Jouer_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
         TempsPartie = "#00:" & Paramettre.TextBoxMinute.Text & ":" & Paramettre.TextBoxSecond.Text & "#"
-        'temps = TempsPartie
+        temps = TempsPartie
+
+    End Sub
+    Private Sub WaitFor(Sec%)
+        Dim Dt As DateTime = DateTime.Now
+        Do
+            Application.DoEvents()
+        Loop While Dt.AddSeconds(Sec) > DateTime.Now
     End Sub
 
     'DateInterval.minute = 
@@ -83,22 +88,56 @@ Public Class Jouer
         Timer1.Enabled = True
     End Sub
 
+    Function GetIndice(sender As Object) As Integer
+        Dim i As Integer = 0
+
+        For Each ctl In GroupBox1.Controls
+            If TypeOf ctl Is PictureBox Then
+                i += 1
+                If sender.name = ctl.name Then
+                    Return i
+                End If
+            End If
+        Next
+        Return -1
+    End Function
+    Function GetValeur(indice As Integer) As Integer
+        Return Module1.GetValeur(indice)
+    End Function
+
+    Private Sub Jouer_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
+        For Each ctl In Me.Controls
+            If TypeOf ctl Is PictureBox Then
+                ctl.Size = New Size(90, 125)
+            End If
+        Next
+    End Sub
     ''' <summary>
     ''' Permet de tourner la carte pour y voir le contenu 
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
-    Private Sub Voir_LaCarte_Click(sender As Object, e As EventArgs) Handles PictureBox_1.Click
+    Private Sub Voir_LaCarte_Click(sender As Object, e As EventArgs) Handles PictureBox_1.Click, PictureBox17.Click, PictureBox20.Click, PictureBox16.Click, PictureBox19.Click,
+PictureBox7.Click, PictureBox5.Click, PictureBox4.Click, PictureBox8.Click, PictureBox3.Click, PictureBox6.Click, PictureBox2.Click, PictureBox11.Click,
+PictureBox10.Click, PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, PictureBox13.Click, PictureBox12.Click, PictureBox15.Click, PictureBox14.Click
         Timer1.Start()
-        For i As Integer = 0 To 1
-            MsgBox("La carte va se retourner, reste vif !")
-            PictureBox_1.Image = Projet_memory.My.Resources.Resources.Card0
-            Thread.Sleep(3000)
-            MsgBox("Hop les 3 secondes passés")
-            PictureBox_1.Image = Projet_memory.My.Resources.Resources.BackCard
-        Next
-
+        ' PictureBox_1.Image = Projet_memory.My.Resources.Resources.Card0
+        'WaitFor(5)
+        ' PictureBox_1.Image = Projet_memory.My.Resources.Resources.BackCard
+        'Dim indice As Integer = GetIndice(sender)
+        MsgBox(GetIndice(sender) & " valeur:  " & GetValeur(GetIndice(sender)))
+        Dim valeur As Integer = GetValeur(GetIndice(sender))
+        If valeur = 1 Then
+            sender.image = Projet_memory.My.Resources.Resources.Capture1
+        ElseIf valeur = 2 Then
+            sender.image = Projet_memory.My.Resources.Resources.Capture2
+        ElseIf valeur = 3 Then
+            sender.image = Projet_memory.My.Resources.Resources.Capture3
+        ElseIf valeur = 4 Then
+            sender.image = Projet_memory.My.Resources.Resources.Capture4
+        ElseIf valeur = 5 Then
+            sender.image = Projet_memory.My.Resources.Resources.Capture
+        End If
     End Sub
-
 
 End Class

@@ -94,7 +94,7 @@ Partial Class Paramettre
         Me.TextBoxSecond.Location = New System.Drawing.Point(342, 103)
         Me.TextBoxSecond.MaxLength = 2
         Me.TextBoxSecond.Name = "TextBoxSecond"
-        Me.TextBoxSecond.Size = New System.Drawing.Size(0, 17)
+        Me.TextBoxSecond.Size = New System.Drawing.Size(33, 17)
         Me.TextBoxSecond.TabIndex = 2
         Me.TextBoxSecond.Text = "00"
         Me.TextBoxSecond.TextAlign = System.Windows.Forms.HorizontalAlignment.Center

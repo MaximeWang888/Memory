@@ -33,6 +33,7 @@ Partial Class Memory
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.LabelTest = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label_Entrezvotrenom
@@ -89,11 +90,17 @@ Partial Class Memory
         resources.ApplyResources(Me.ComboBox1, "ComboBox1")
         Me.ComboBox1.Name = "ComboBox1"
         '
+        'LabelTest
+        '
+        resources.ApplyResources(Me.LabelTest, "LabelTest")
+        Me.LabelTest.Name = "LabelTest"
+        '
         'Memory
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ControlBox = False
+        Me.Controls.Add(Me.LabelTest)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -117,4 +124,5 @@ Partial Class Memory
     Friend WithEvents Label3 As Label
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents LabelTest As Label
 End Class
