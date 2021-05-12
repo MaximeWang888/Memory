@@ -1,6 +1,11 @@
 ﻿Module Module1
 
     Dim tab(19) As Integer
+    Public nbImagesIdentique As Integer
+    Public nbImagesIdentique2 As Integer
+    Public nbImagesIdentique3 As Integer
+    Public nbImagesIdentique4 As Integer
+    Public nbImagesIdentique5 As Integer
 
     Sub melangeTableau(tab() As Integer)
         Dim random As Random
@@ -16,6 +21,11 @@
         Next
     End Sub
 
+    Sub avoirUnCarre(nb As Integer)
+        If nb = 4 Then
+            MsgBox("UN CARRE DE TROUVE")
+        End If
+    End Sub
     Function affiche(tab() As Integer) As String
 
         Dim mot As String = ""
@@ -47,7 +57,7 @@
             tab(i) = 5
         Next
         'Memory.LabelTest.Text = affiche(tab)
-        melangeTableau(tab)
+        'melangeTableau(tab)
         Memory.LabelTest.Text = affiche(tab)
         Application.Run(Memory)
     End Sub

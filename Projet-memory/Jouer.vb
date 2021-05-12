@@ -4,10 +4,21 @@
     ''' </summary>
     Dim TempsPartie As String
     Dim temps As Date
+    Dim value As Integer
+    Dim carre As Boolean
+    Dim tab(3) As Image
+    Dim nbDeCarteRetourner As Integer, nbCarreTrouve As Integer
+    Dim tabNbDeCartesRetourner As New ArrayList
+    Dim valeurActuelle As Integer
+
+
     Private Sub Jouer_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
         TempsPartie = "#00:" & Paramettre.TextBoxMinute.Text & ":" & Paramettre.TextBoxSecond.Text & "#"
         temps = TempsPartie
-
+        tab(0) = Projet_memory.My.Resources.Resources.Capture1
+        tab(1) = Projet_memory.My.Resources.Resources.Capture2
+        tab(2) = Projet_memory.My.Resources.Resources.Capture3
+        PB3.Image = tab(0)
     End Sub
     Private Sub WaitFor(Sec%)
         Dim Dt As DateTime = DateTime.Now
@@ -30,6 +41,8 @@
         Button_ReprendreTimer.Text = "Reprendre"
         Timer1.Interval = 1000
         Timer1.Stop()
+        nbDeCarteRetourner = 0
+        nbCarreTrouve = 0
     End Sub
 
     ''' <summary>
@@ -125,19 +138,91 @@ PictureBox10.Click, PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, Pi
         'WaitFor(5)
         ' PictureBox_1.Image = Projet_memory.My.Resources.Resources.BackCard
         'Dim indice As Integer = GetIndice(sender)
-        MsgBox(GetIndice(sender) & " valeur:  " & GetValeur(GetIndice(sender)))
+        'MsgBox(GetIndice(sender) & " valeur:  " & GetValeur(GetIndice(sender)))
         Dim valeur As Integer = GetValeur(GetIndice(sender))
+
+        retournerLesCartes(sender, valeur)
+        nbDeCarteRetourner += 1
+        tabNbDeCartesRetourner.Add(GetIndice(sender))
+        If nbDeCarteRetourner < 2 Then
+            valeurActuelle = valeur
+
+        Else
+            If valeurActuelle = valeur Then
+                ' c les meme catrte
+                ' MsgBox("les carte sont pareil")
+                If nbDeCarteRetourner = 4 Then
+                    'ça fait un caréé
+                    nbCarreTrouve += 1
+                    rendreEnable(tabNbDeCartesRetourner)
+                    valeurActuelle = 0
+                    nbDeCarteRetourner = 0
+                    tabNbDeCartesRetourner.Clear()
+
+                End If
+            Else
+                'Les cartes ne sont pas les même
+                valeurActuelle = 0
+                nbDeCarteRetourner = 0
+                GroupBox1.Enabled = False
+                WaitFor(2)
+                GroupBox1.Enabled = True
+                retournerCarte(tabNbDeCartesRetourner)
+                tabNbDeCartesRetourner.Clear()
+
+
+                ' tt remettre a 0 
+            End If
+        End If
+
+    End Sub
+
+    Sub retournerCarte(tab As ArrayList)
+
+        Dim a As String = ""
+        For j As Integer = 0 To tab.Count() - 1
+            Dim i As Integer = 0
+            For Each ctl In GroupBox1.Controls
+                If TypeOf ctl Is PictureBox Then
+                    i += 1
+                    If i = tab(j) Then
+                        ctl.image = Projet_memory.My.Resources.Resources.BackCard
+                    End If
+                End If
+            Next
+        Next
+    End Sub
+
+    Sub rendreEnable(tab As ArrayList)
+
+        For j As Integer = 0 To tab.Count() - 1
+            Dim i As Integer = 0
+            For Each ctl In GroupBox1.Controls
+                If TypeOf ctl Is PictureBox Then
+                    i += 1
+                    If i = tab(j) Then
+                        ctl.enabled = False
+                    End If
+                End If
+            Next
+        Next
+    End Sub
+
+    Sub retournerLesCartes(sender As Object, valeur As Integer)
         If valeur = 1 Then
             sender.image = Projet_memory.My.Resources.Resources.Capture1
         ElseIf valeur = 2 Then
             sender.image = Projet_memory.My.Resources.Resources.Capture2
+
         ElseIf valeur = 3 Then
             sender.image = Projet_memory.My.Resources.Resources.Capture3
         ElseIf valeur = 4 Then
             sender.image = Projet_memory.My.Resources.Resources.Capture4
+
         ElseIf valeur = 5 Then
             sender.image = Projet_memory.My.Resources.Resources.Capture
         End If
+
     End Sub
 
 End Class

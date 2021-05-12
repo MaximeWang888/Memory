@@ -52,6 +52,9 @@ Partial Class Jouer
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.PB1 = New System.Windows.Forms.PictureBox()
+        Me.PB2 = New System.Windows.Forms.PictureBox()
+        Me.PB3 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox_1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -73,53 +76,52 @@ Partial Class Jouer
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PB1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PB2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PB3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(37, 24)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(49, 30)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(45, 13)
+        Me.Label1.Size = New System.Drawing.Size(60, 17)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Joueur :"
         '
         'Label_NomDuJoueur
         '
         Me.Label_NomDuJoueur.AutoSize = True
-        Me.Label_NomDuJoueur.Location = New System.Drawing.Point(86, 24)
-        Me.Label_NomDuJoueur.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label_NomDuJoueur.Location = New System.Drawing.Point(115, 30)
         Me.Label_NomDuJoueur.Name = "Label_NomDuJoueur"
-        Me.Label_NomDuJoueur.Size = New System.Drawing.Size(27, 13)
+        Me.Label_NomDuJoueur.Size = New System.Drawing.Size(34, 17)
         Me.Label_NomDuJoueur.TabIndex = 1
         Me.Label_NomDuJoueur.Text = "vide"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(176, 24)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(235, 30)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(86, 13)
+        Me.Label3.Size = New System.Drawing.Size(116, 17)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "- Temps restant :"
         '
         'Label_TempsRestant
         '
         Me.Label_TempsRestant.AutoSize = True
-        Me.Label_TempsRestant.Location = New System.Drawing.Point(274, 24)
-        Me.Label_TempsRestant.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label_TempsRestant.Location = New System.Drawing.Point(365, 30)
         Me.Label_TempsRestant.Name = "Label_TempsRestant"
-        Me.Label_TempsRestant.Size = New System.Drawing.Size(0, 13)
+        Me.Label_TempsRestant.Size = New System.Drawing.Size(0, 17)
         Me.Label_TempsRestant.TabIndex = 3
         '
         'Button_Abandon
         '
-        Me.Button_Abandon.Location = New System.Drawing.Point(380, 24)
-        Me.Button_Abandon.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button_Abandon.Location = New System.Drawing.Point(507, 30)
+        Me.Button_Abandon.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button_Abandon.Name = "Button_Abandon"
-        Me.Button_Abandon.Size = New System.Drawing.Size(98, 62)
+        Me.Button_Abandon.Size = New System.Drawing.Size(131, 76)
         Me.Button_Abandon.TabIndex = 5
         Me.Button_Abandon.Text = "Abandon"
         Me.Button_Abandon.UseVisualStyleBackColor = True
@@ -130,20 +132,20 @@ Partial Class Jouer
         '
         'Button_ArreterTimer
         '
-        Me.Button_ArreterTimer.Location = New System.Drawing.Point(162, 52)
-        Me.Button_ArreterTimer.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button_ArreterTimer.Location = New System.Drawing.Point(216, 64)
+        Me.Button_ArreterTimer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button_ArreterTimer.Name = "Button_ArreterTimer"
-        Me.Button_ArreterTimer.Size = New System.Drawing.Size(67, 33)
+        Me.Button_ArreterTimer.Size = New System.Drawing.Size(89, 41)
         Me.Button_ArreterTimer.TabIndex = 49
         Me.Button_ArreterTimer.Text = "Button1"
         Me.Button_ArreterTimer.UseVisualStyleBackColor = True
         '
         'Button_ReprendreTimer
         '
-        Me.Button_ReprendreTimer.Location = New System.Drawing.Point(262, 52)
-        Me.Button_ReprendreTimer.Margin = New System.Windows.Forms.Padding(2)
+        Me.Button_ReprendreTimer.Location = New System.Drawing.Point(349, 64)
+        Me.Button_ReprendreTimer.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button_ReprendreTimer.Name = "Button_ReprendreTimer"
-        Me.Button_ReprendreTimer.Size = New System.Drawing.Size(70, 33)
+        Me.Button_ReprendreTimer.Size = New System.Drawing.Size(93, 41)
         Me.Button_ReprendreTimer.TabIndex = 50
         Me.Button_ReprendreTimer.Text = "Button2"
         Me.Button_ReprendreTimer.UseVisualStyleBackColor = True
@@ -151,10 +153,10 @@ Partial Class Jouer
         'PictureBox16
         '
         Me.PictureBox16.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox16.Location = New System.Drawing.Point(395, 7)
-        Me.PictureBox16.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox16.Location = New System.Drawing.Point(527, 9)
+        Me.PictureBox16.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox16.Name = "PictureBox16"
-        Me.PictureBox16.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox16.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox16.TabIndex = 74
         Me.PictureBox16.TabStop = False
@@ -162,10 +164,10 @@ Partial Class Jouer
         'PictureBox17
         '
         Me.PictureBox17.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox17.Location = New System.Drawing.Point(111, 7)
-        Me.PictureBox17.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox17.Location = New System.Drawing.Point(148, 9)
+        Me.PictureBox17.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox17.Name = "PictureBox17"
-        Me.PictureBox17.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox17.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox17.TabIndex = 73
         Me.PictureBox17.TabStop = False
@@ -174,10 +176,10 @@ Partial Class Jouer
         '
         Me.PictureBox_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.PictureBox_1.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox_1.Location = New System.Drawing.Point(17, 7)
-        Me.PictureBox_1.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox_1.Location = New System.Drawing.Point(23, 9)
+        Me.PictureBox_1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox_1.Name = "PictureBox_1"
-        Me.PictureBox_1.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox_1.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox_1.TabIndex = 72
         Me.PictureBox_1.TabStop = False
@@ -185,10 +187,10 @@ Partial Class Jouer
         'PictureBox19
         '
         Me.PictureBox19.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox19.Location = New System.Drawing.Point(298, 7)
-        Me.PictureBox19.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox19.Location = New System.Drawing.Point(397, 9)
+        Me.PictureBox19.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox19.Name = "PictureBox19"
-        Me.PictureBox19.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox19.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox19.TabIndex = 71
         Me.PictureBox19.TabStop = False
@@ -196,10 +198,10 @@ Partial Class Jouer
         'PictureBox20
         '
         Me.PictureBox20.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox20.Location = New System.Drawing.Point(204, 7)
-        Me.PictureBox20.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox20.Location = New System.Drawing.Point(272, 9)
+        Me.PictureBox20.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox20.Name = "PictureBox20"
-        Me.PictureBox20.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox20.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox20.TabIndex = 70
         Me.PictureBox20.TabStop = False
@@ -207,10 +209,10 @@ Partial Class Jouer
         'PictureBox11
         '
         Me.PictureBox11.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox11.Location = New System.Drawing.Point(395, 395)
-        Me.PictureBox11.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox11.Location = New System.Drawing.Point(527, 486)
+        Me.PictureBox11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox11.Name = "PictureBox11"
-        Me.PictureBox11.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox11.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox11.TabIndex = 69
         Me.PictureBox11.TabStop = False
@@ -218,10 +220,10 @@ Partial Class Jouer
         'PictureBox12
         '
         Me.PictureBox12.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox12.Location = New System.Drawing.Point(111, 395)
-        Me.PictureBox12.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox12.Location = New System.Drawing.Point(148, 486)
+        Me.PictureBox12.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox12.Name = "PictureBox12"
-        Me.PictureBox12.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox12.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox12.TabIndex = 68
         Me.PictureBox12.TabStop = False
@@ -229,10 +231,10 @@ Partial Class Jouer
         'PictureBox13
         '
         Me.PictureBox13.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox13.Location = New System.Drawing.Point(17, 395)
-        Me.PictureBox13.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox13.Location = New System.Drawing.Point(23, 486)
+        Me.PictureBox13.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox13.Name = "PictureBox13"
-        Me.PictureBox13.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox13.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox13.TabIndex = 67
         Me.PictureBox13.TabStop = False
@@ -240,10 +242,10 @@ Partial Class Jouer
         'PictureBox14
         '
         Me.PictureBox14.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox14.Location = New System.Drawing.Point(298, 395)
-        Me.PictureBox14.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox14.Location = New System.Drawing.Point(397, 486)
+        Me.PictureBox14.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox14.Name = "PictureBox14"
-        Me.PictureBox14.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox14.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox14.TabIndex = 66
         Me.PictureBox14.TabStop = False
@@ -251,10 +253,10 @@ Partial Class Jouer
         'PictureBox15
         '
         Me.PictureBox15.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox15.Location = New System.Drawing.Point(204, 395)
-        Me.PictureBox15.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox15.Location = New System.Drawing.Point(272, 486)
+        Me.PictureBox15.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox15.Name = "PictureBox15"
-        Me.PictureBox15.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox15.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox15.TabIndex = 65
         Me.PictureBox15.TabStop = False
@@ -262,10 +264,10 @@ Partial Class Jouer
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox1.Location = New System.Drawing.Point(395, 265)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox1.Location = New System.Drawing.Point(527, 326)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox1.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 64
         Me.PictureBox1.TabStop = False
@@ -273,10 +275,10 @@ Partial Class Jouer
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox2.Location = New System.Drawing.Point(111, 265)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox2.Location = New System.Drawing.Point(148, 326)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox2.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 63
         Me.PictureBox2.TabStop = False
@@ -284,10 +286,10 @@ Partial Class Jouer
         'PictureBox6
         '
         Me.PictureBox6.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox6.Location = New System.Drawing.Point(17, 265)
-        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox6.Location = New System.Drawing.Point(23, 326)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox6.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox6.TabIndex = 62
         Me.PictureBox6.TabStop = False
@@ -295,10 +297,10 @@ Partial Class Jouer
         'PictureBox9
         '
         Me.PictureBox9.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox9.Location = New System.Drawing.Point(298, 265)
-        Me.PictureBox9.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox9.Location = New System.Drawing.Point(397, 326)
+        Me.PictureBox9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox9.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox9.TabIndex = 61
         Me.PictureBox9.TabStop = False
@@ -306,10 +308,10 @@ Partial Class Jouer
         'PictureBox10
         '
         Me.PictureBox10.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox10.Location = New System.Drawing.Point(204, 265)
-        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox10.Location = New System.Drawing.Point(272, 326)
+        Me.PictureBox10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox10.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox10.TabIndex = 60
         Me.PictureBox10.TabStop = False
@@ -317,10 +319,10 @@ Partial Class Jouer
         'PictureBox8
         '
         Me.PictureBox8.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox8.Location = New System.Drawing.Point(395, 134)
-        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox8.Location = New System.Drawing.Point(527, 165)
+        Me.PictureBox8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox8.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox8.TabIndex = 59
         Me.PictureBox8.TabStop = False
@@ -328,10 +330,10 @@ Partial Class Jouer
         'PictureBox5
         '
         Me.PictureBox5.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox5.Location = New System.Drawing.Point(111, 134)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox5.Location = New System.Drawing.Point(148, 165)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox5.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox5.TabIndex = 57
         Me.PictureBox5.TabStop = False
@@ -339,10 +341,10 @@ Partial Class Jouer
         'PictureBox7
         '
         Me.PictureBox7.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox7.Location = New System.Drawing.Point(17, 134)
-        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox7.Location = New System.Drawing.Point(23, 165)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox7.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox7.TabIndex = 56
         Me.PictureBox7.TabStop = False
@@ -350,10 +352,10 @@ Partial Class Jouer
         'PictureBox3
         '
         Me.PictureBox3.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox3.Location = New System.Drawing.Point(298, 134)
-        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox3.Location = New System.Drawing.Point(397, 165)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox3.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 54
         Me.PictureBox3.TabStop = False
@@ -361,10 +363,10 @@ Partial Class Jouer
         'PictureBox4
         '
         Me.PictureBox4.Image = Global.Projet_memory.My.Resources.Resources.BackCard
-        Me.PictureBox4.Location = New System.Drawing.Point(204, 134)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(2)
+        Me.PictureBox4.Location = New System.Drawing.Point(272, 165)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(90, 125)
+        Me.PictureBox4.Size = New System.Drawing.Size(120, 154)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 53
         Me.PictureBox4.TabStop = False
@@ -391,19 +393,57 @@ Partial Class Jouer
         Me.GroupBox1.Controls.Add(Me.PictureBox7)
         Me.GroupBox1.Controls.Add(Me.PictureBox3)
         Me.GroupBox1.Controls.Add(Me.PictureBox4)
-        Me.GroupBox1.Location = New System.Drawing.Point(16, 97)
+        Me.GroupBox1.Location = New System.Drawing.Point(21, 119)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(510, 529)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(4)
+        Me.GroupBox1.Size = New System.Drawing.Size(680, 651)
         Me.GroupBox1.TabIndex = 75
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
+        'PB1
+        '
+        Me.PB1.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.PB1.Location = New System.Drawing.Point(708, 491)
+        Me.PB1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PB1.Name = "PB1"
+        Me.PB1.Size = New System.Drawing.Size(120, 154)
+        Me.PB1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PB1.TabIndex = 75
+        Me.PB1.TabStop = False
+        '
+        'PB2
+        '
+        Me.PB2.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.PB2.Location = New System.Drawing.Point(846, 491)
+        Me.PB2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PB2.Name = "PB2"
+        Me.PB2.Size = New System.Drawing.Size(120, 154)
+        Me.PB2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PB2.TabIndex = 76
+        Me.PB2.TabStop = False
+        '
+        'PB3
+        '
+        Me.PB3.Image = Global.Projet_memory.My.Resources.Resources.BackCard
+        Me.PB3.Location = New System.Drawing.Point(791, 649)
+        Me.PB3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PB3.Name = "PB3"
+        Me.PB3.Size = New System.Drawing.Size(120, 154)
+        Me.PB3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PB3.TabIndex = 77
+        Me.PB3.TabStop = False
+        '
         'Jouer
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(563, 664)
+        Me.ClientSize = New System.Drawing.Size(978, 803)
         Me.ControlBox = False
+        Me.Controls.Add(Me.PB3)
+        Me.Controls.Add(Me.PB2)
+        Me.Controls.Add(Me.PB1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button_ReprendreTimer)
         Me.Controls.Add(Me.Button_ArreterTimer)
@@ -412,7 +452,7 @@ Partial Class Jouer
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label_NomDuJoueur)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Jouer"
         Me.Text = "Memory"
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
@@ -436,6 +476,9 @@ Partial Class Jouer
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
+        CType(Me.PB1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PB2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PB3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -470,4 +513,7 @@ Partial Class Jouer
     Friend WithEvents PictureBox19 As PictureBox
     Friend WithEvents PictureBox20 As PictureBox
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents PB1 As PictureBox
+    Friend WithEvents PB2 As PictureBox
+    Friend WithEvents PB3 As PictureBox
 End Class

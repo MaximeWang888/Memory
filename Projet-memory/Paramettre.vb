@@ -25,12 +25,19 @@
 
 
     Private Sub TextBoxMinute_LostFocus(sender As Object, e As EventArgs) Handles TextBoxMinute.LostFocus, TextBoxSecond.LostFocus
+        If TextBoxMinute.Text = "" Then
+            TextBoxMinute.Text = "01"
+        End If
         If TextBoxMinute.Text > 5 Then
             TextBoxMinute.Text = "05"
+        End If
+        If TextBoxSecond.Text = "" Then
+            TextBoxSecond.Text = "00"
         End If
         If TextBoxSecond.Text > 59 Then
             TextBoxSecond.Text = "59"
         End If
+
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
@@ -40,6 +47,5 @@
             CheckBox1.Text = "Oui"
         End If
     End Sub
-
 
 End Class
