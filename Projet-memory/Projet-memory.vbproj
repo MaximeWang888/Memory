@@ -108,11 +108,6 @@
       <DependentUpon>Application.myapp</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -134,7 +129,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -160,6 +154,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="NewFile1.txt" />
+    <None Include="Resources\neon51.JPG" />
+    <None Include="Resources\neon41.JPG" />
+    <None Include="Resources\neon31.JPG" />
+    <None Include="Resources\neon21.JPG" />
+    <None Include="Resources\neon11.JPG" />
+    <None Include="Resources\neon6.JPG" />
+    <None Include="Resources\Card41.png" />
+    <None Include="Resources\Card31.png" />
+    <None Include="Resources\Card21.png" />
+    <None Include="Resources\Card11.png" />
+    <None Include="Resources\Card01.png" />
+    <None Include="Resources\BackCard1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

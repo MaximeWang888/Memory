@@ -6,7 +6,7 @@
     Dim temps As Date
     Dim value As Integer
     Dim carre As Boolean
-    Dim tab(3) As Image
+    Dim tab(6) As Image
     Dim nbDeCarteRetourner As Integer, nbCarreTrouve As Integer
     Dim tabNbDeCartesRetourner As New ArrayList
     Dim valeurActuelle As Integer
@@ -15,10 +15,23 @@
     Private Sub Jouer_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
         TempsPartie = "#00:" & Paramettre.TextBoxMinute.Text & ":" & Paramettre.TextBoxSecond.Text & "#"
         temps = TempsPartie
-        tab(0) = Projet_memory.My.Resources.Resources.Capture1
-        tab(1) = Projet_memory.My.Resources.Resources.Capture2
-        tab(2) = Projet_memory.My.Resources.Resources.Capture3
-        PB3.Image = tab(0)
+        If Paramettre.RadioButton1.Checked = True Then
+            tab(0) = Projet_memory.My.Resources.Resources.BackCard
+            tab(1) = Projet_memory.My.Resources.Resources.Card0
+            tab(2) = Projet_memory.My.Resources.Resources.Card0
+            tab(3) = Projet_memory.My.Resources.Resources.Card0
+            tab(4) = Projet_memory.My.Resources.Resources.Card0
+            tab(5) = Projet_memory.My.Resources.Resources.Card0
+        Else
+            tab(0) = Projet_memory.My.Resources.Resources.
+            tab(1) = Projet_memory.My.Resources.Resources.neon
+            tab(2) = Projet_memory.My.Resources.Resources.neon
+            tab(3) = Projet_memory.My.Resources.Resources.neon
+            tab(4) = Projet_memory.My.Resources.Resources.neon
+            tab(5) = Projet_memory.My.Resources.Resources.neon
+        End If
+
+
     End Sub
     Private Sub WaitFor(Sec%)
         Dim Dt As DateTime = DateTime.Now
@@ -122,6 +135,7 @@
         For Each ctl In Me.Controls
             If TypeOf ctl Is PictureBox Then
                 ctl.Size = New Size(90, 125)
+                ctl.image = tab(0)
             End If
         Next
     End Sub
@@ -132,13 +146,8 @@
     ''' <param name="e"></param>
     Private Sub Voir_LaCarte_Click(sender As Object, e As EventArgs) Handles PictureBox_1.Click, PictureBox17.Click, PictureBox20.Click, PictureBox16.Click, PictureBox19.Click,
 PictureBox7.Click, PictureBox5.Click, PictureBox4.Click, PictureBox8.Click, PictureBox3.Click, PictureBox6.Click, PictureBox2.Click, PictureBox11.Click,
-PictureBox10.Click, PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, PictureBox13.Click, PictureBox12.Click, PictureBox15.Click, PictureBox14.Click
+PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, PictureBox13.Click, PictureBox12.Click, PictureBox15.Click, PictureBox14.Click
         Timer1.Start()
-        ' PictureBox_1.Image = Projet_memory.My.Resources.Resources.Card0
-        'WaitFor(5)
-        ' PictureBox_1.Image = Projet_memory.My.Resources.Resources.BackCard
-        'Dim indice As Integer = GetIndice(sender)
-        'MsgBox(GetIndice(sender) & " valeur:  " & GetValeur(GetIndice(sender)))
         Dim valeur As Integer = GetValeur(GetIndice(sender))
 
         retournerLesCartes(sender, valeur)
@@ -153,11 +162,17 @@ PictureBox10.Click, PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, Pi
                 ' MsgBox("les carte sont pareil")
                 If nbDeCarteRetourner = 4 Then
                     'ça fait un caréé
+
                     nbCarreTrouve += 1
                     rendreEnable(tabNbDeCartesRetourner)
                     valeurActuelle = 0
                     nbDeCarteRetourner = 0
                     tabNbDeCartesRetourner.Clear()
+
+                    If nbCarreTrouve = 5 Then
+                        Timer1.Stop()
+                        MsgBox("vous avez gagné")
+                    End If
 
                 End If
             Else
@@ -169,6 +184,7 @@ PictureBox10.Click, PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, Pi
                 GroupBox1.Enabled = True
                 retournerCarte(tabNbDeCartesRetourner)
                 tabNbDeCartesRetourner.Clear()
+                MsgBox(tabNbDeCartesRetourner.Count())
 
 
                 ' tt remettre a 0 
@@ -208,21 +224,23 @@ PictureBox10.Click, PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, Pi
         Next
     End Sub
 
+
+
     Sub retournerLesCartes(sender As Object, valeur As Integer)
-        If valeur = 1 Then
-            sender.image = Projet_memory.My.Resources.Resources.Capture1
-        ElseIf valeur = 2 Then
-            sender.image = Projet_memory.My.Resources.Resources.Capture2
+        'If valeur = 1 Then
+        '    sender.image = Projet_memory.My.Resources.Resources.Capture1
+        'ElseIf valeur = 2 Then
+        '    sender.image = Projet_memory.My.Resources.Resources.Capture2
 
-        ElseIf valeur = 3 Then
-            sender.image = Projet_memory.My.Resources.Resources.Capture3
-        ElseIf valeur = 4 Then
-            sender.image = Projet_memory.My.Resources.Resources.Capture4
+        'ElseIf valeur = 3 Then
+        '    sender.image = Projet_memory.My.Resources.Resources.Capture3
+        'ElseIf valeur = 4 Then
+        '    sender.image = Projet_memory.My.Resources.Resources.Capture4
 
-        ElseIf valeur = 5 Then
-            sender.image = Projet_memory.My.Resources.Resources.Capture
-        End If
-
+        'ElseIf valeur = 5 Then
+        '    sender.image = Projet_memory.My.Resources.Resources.Capture
+        'End If
+        sender.image = tab(valeur)
     End Sub
 
 End Class

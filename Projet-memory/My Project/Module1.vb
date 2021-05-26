@@ -38,6 +38,7 @@
     Function GetValeur(indice As Integer) As Integer
         Return tab(indice - 1)
     End Function
+
     Sub Main()
 
 

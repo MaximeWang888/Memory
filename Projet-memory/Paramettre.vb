@@ -19,13 +19,19 @@
             TextBoxMinute.Text = "01"
             TextBoxSecond.Text = "00"
             CheckBox1.Checked = False
+            CheckBox2.Checked = False
+            CheckBox3.Checked = False
+            RadioButton1.Checked = False
+            RadioButton2.Checked = False
+            PictureBox2.Size = New System.Drawing.Size(91, 126)
+            PictureBox1.Size = New System.Drawing.Size(91, 126)
         End If
     End Sub
 
 
 
     Private Sub TextBoxMinute_LostFocus(sender As Object, e As EventArgs) Handles TextBoxMinute.LostFocus, TextBoxSecond.LostFocus
-        If TextBoxMinute.Text = "" Then
+        If TextBoxMinute.Text = "" Or TextBoxMinute.Text < 1 Then
             TextBoxMinute.Text = "01"
         End If
         If TextBoxMinute.Text > 5 Then
@@ -48,4 +54,29 @@
         End If
     End Sub
 
+    Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
+        If CheckBox2.Checked = False Then
+            CheckBox2.Text = "Non"
+        Else
+            CheckBox2.Text = "Oui"
+        End If
+    End Sub
+
+    Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged
+        If CheckBox3.Checked = False Then
+            CheckBox3.Text = "Non"
+        Else
+            CheckBox3.Text = "Oui"
+        End If
+    End Sub
+
+    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged, RadioButton1.CheckedChanged
+        If RadioButton1.Checked = True Then
+            PictureBox1.Size = New System.Drawing.Size(121, 156)
+            PictureBox2.Size = New System.Drawing.Size(91, 126)
+        Else
+            PictureBox2.Size = New System.Drawing.Size(121, 156)
+            PictureBox1.Size = New System.Drawing.Size(91, 126)
+        End If
+    End Sub
 End Class
