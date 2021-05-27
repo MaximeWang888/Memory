@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Jouer
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Jouer
     'REMARQUE : la procédure suivante est requise par le Concepteur Windows Form
     'Elle peut être modifiée à l'aide du Concepteur Windows Form.  
     'Ne la modifiez pas à l'aide de l'éditeur de code.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -31,6 +31,7 @@ Partial Class Jouer
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Button_ArreterTimer = New System.Windows.Forms.Button()
         Me.Button_ReprendreTimer = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.PictureBox16 = New System.Windows.Forms.PictureBox()
         Me.PictureBox17 = New System.Windows.Forms.PictureBox()
         Me.PictureBox_1 = New System.Windows.Forms.PictureBox()
@@ -51,7 +52,7 @@ Partial Class Jouer
         Me.PictureBox7 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox_1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -72,7 +73,6 @@ Partial Class Jouer
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -147,6 +147,34 @@ Partial Class Jouer
         Me.Button_ReprendreTimer.TabIndex = 50
         Me.Button_ReprendreTimer.Text = "Button2"
         Me.Button_ReprendreTimer.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.PictureBox16)
+        Me.GroupBox1.Controls.Add(Me.PictureBox17)
+        Me.GroupBox1.Controls.Add(Me.PictureBox_1)
+        Me.GroupBox1.Controls.Add(Me.PictureBox19)
+        Me.GroupBox1.Controls.Add(Me.PictureBox20)
+        Me.GroupBox1.Controls.Add(Me.PictureBox11)
+        Me.GroupBox1.Controls.Add(Me.PictureBox12)
+        Me.GroupBox1.Controls.Add(Me.PictureBox13)
+        Me.GroupBox1.Controls.Add(Me.PictureBox14)
+        Me.GroupBox1.Controls.Add(Me.PictureBox15)
+        Me.GroupBox1.Controls.Add(Me.PictureBox1)
+        Me.GroupBox1.Controls.Add(Me.PictureBox2)
+        Me.GroupBox1.Controls.Add(Me.PictureBox6)
+        Me.GroupBox1.Controls.Add(Me.PictureBox9)
+        Me.GroupBox1.Controls.Add(Me.PictureBox10)
+        Me.GroupBox1.Controls.Add(Me.PictureBox8)
+        Me.GroupBox1.Controls.Add(Me.PictureBox5)
+        Me.GroupBox1.Controls.Add(Me.PictureBox7)
+        Me.GroupBox1.Controls.Add(Me.PictureBox3)
+        Me.GroupBox1.Controls.Add(Me.PictureBox4)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 97)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(510, 529)
+        Me.GroupBox1.TabIndex = 75
+        Me.GroupBox1.TabStop = False
         '
         'PictureBox16
         '
@@ -369,40 +397,11 @@ Partial Class Jouer
         Me.PictureBox4.TabIndex = 53
         Me.PictureBox4.TabStop = False
         '
-        'GroupBox1
-        '
-        Me.GroupBox1.Controls.Add(Me.PictureBox16)
-        Me.GroupBox1.Controls.Add(Me.PictureBox17)
-        Me.GroupBox1.Controls.Add(Me.PictureBox_1)
-        Me.GroupBox1.Controls.Add(Me.PictureBox19)
-        Me.GroupBox1.Controls.Add(Me.PictureBox20)
-        Me.GroupBox1.Controls.Add(Me.PictureBox11)
-        Me.GroupBox1.Controls.Add(Me.PictureBox12)
-        Me.GroupBox1.Controls.Add(Me.PictureBox13)
-        Me.GroupBox1.Controls.Add(Me.PictureBox14)
-        Me.GroupBox1.Controls.Add(Me.PictureBox15)
-        Me.GroupBox1.Controls.Add(Me.PictureBox1)
-        Me.GroupBox1.Controls.Add(Me.PictureBox2)
-        Me.GroupBox1.Controls.Add(Me.PictureBox6)
-        Me.GroupBox1.Controls.Add(Me.PictureBox9)
-        Me.GroupBox1.Controls.Add(Me.PictureBox10)
-        Me.GroupBox1.Controls.Add(Me.PictureBox8)
-        Me.GroupBox1.Controls.Add(Me.PictureBox5)
-        Me.GroupBox1.Controls.Add(Me.PictureBox7)
-        Me.GroupBox1.Controls.Add(Me.PictureBox3)
-        Me.GroupBox1.Controls.Add(Me.PictureBox4)
-        Me.GroupBox1.Location = New System.Drawing.Point(16, 97)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(510, 529)
-        Me.GroupBox1.TabIndex = 75
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
-        '
         'Jouer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(563, 664)
+        Me.ClientSize = New System.Drawing.Size(734, 652)
         Me.ControlBox = False
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button_ReprendreTimer)
@@ -415,6 +414,7 @@ Partial Class Jouer
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Jouer"
         Me.Text = "Memory"
+        Me.GroupBox1.ResumeLayout(False)
         CType(Me.PictureBox16, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox_1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -435,7 +435,6 @@ Partial Class Jouer
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -27,6 +27,11 @@ Projet-memory
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Projet_memory.My.Resources.Resources.BackCard1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Projet_memory.My.Resources.Resources.Capture">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -53,6 +58,61 @@ Projet-memory
 </summary>
 </member>
 <member name="P:Projet_memory.My.Resources.Resources.Card0">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.Card01">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.Card1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.Card2">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.Card3">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.Card4">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.neon">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.neon1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.neon2">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.neon3">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.neon4">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Projet_memory.My.Resources.Resources.neon5">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
@@ -92,7 +152,7 @@ Projet-memory
  <param name="sender"></param>
  <param name="e"></param>
 </member>
-<member name="F:Projet_memory.Jouer.TempsPartie">
+<member name="F:Projet_memory.Jouer.temps">
  <summary>
  
  </summary>
