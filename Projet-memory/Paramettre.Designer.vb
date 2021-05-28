@@ -99,7 +99,7 @@ Partial Class Paramettre
         Me.TextBoxSecond.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxSecond.MaxLength = 2
         Me.TextBoxSecond.Name = "TextBoxSecond"
-        Me.TextBoxSecond.Size = New System.Drawing.Size(0, 21)
+        Me.TextBoxSecond.Size = New System.Drawing.Size(44, 21)
         Me.TextBoxSecond.TabIndex = 2
         Me.TextBoxSecond.Text = "00"
         Me.TextBoxSecond.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
