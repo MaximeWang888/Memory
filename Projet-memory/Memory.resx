@@ -349,16 +349,16 @@
     <value>True</value>
   </data>
   <data name="LabelTest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 253</value>
+    <value>368, 239</value>
   </data>
   <data name="LabelTest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 13</value>
+    <value>39, 13</value>
   </data>
   <data name="LabelTest.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="LabelTest.Text" xml:space="preserve">
-    <value>Vide</value>
+    <value>Label4</value>
   </data>
   <data name="&gt;&gt;LabelTest.Name" xml:space="preserve">
     <value>LabelTest</value>
@@ -370,7 +370,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;LabelTest.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

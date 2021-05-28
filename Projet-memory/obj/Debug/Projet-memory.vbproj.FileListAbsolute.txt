@@ -40,3 +40,18 @@ C:\Users\china\OneDrive\Bureau\INFO\Bases de l'informatique\Projets\Projet Progr
 C:\Users\fabie\source\repos\Projet-memory\Memory\Projet-memory\obj\Debug\Projet_memory.Score.resources
 C:\Users\fabie\source\repos\Projet-memory\Memory\Projet-memory\obj\Debug\Projet_memory.Paramettre.resources
 C:\Users\china\OneDrive\Bureau\INFO\Bases de l'informatique\Projets\Projet Programmation\Projet Memory\Memory\Projet-memory\obj\Debug\Projet_memory.Paramettre.resources
+C:\Users\fabie\Documents\Travail\S2\Periode-D\IHM\Projet\Projet\Memory-Maxime\Projet-memory\bin\Debug\Projet-memory.exe
+C:\Users\fabie\Documents\Travail\S2\Periode-D\IHM\Projet\Projet\Memory-Maxime\Projet-memory\bin\Debug\Projet-memory.exe.config
+C:\Users\fabie\Documents\Travail\S2\Periode-D\IHM\Projet\Projet\Memory-Maxime\Projet-memory\obj\Debug\Projet_memory.Paramettre.resources
+C:\Users\fabie\Documents\Travail\S2\Periode-D\IHM\Projet\Projet\Memory-Maxime\Projet-memory\obj\Debug\Projet_memory.Score.resources
+C:\Users\fabie\Documents\Travail\S2\Periode-D\IHM\Projet\Projet\Memory-Maxime\Projet-memory\obj\Debug\Projet_memory.Memory.resources
+C:\Users\fabie\Documents\Travail\S2\Periode-D\IHM\Projet\Projet\Memory-Maxime\Projet-memory\obj\Debug\Projet_memory.Jouer.resources
+C:\Users\fabie\Documents\Travail\S2\Periode-D\IHM\Projet\Projet\Memory-Maxime\Projet-memory\obj\Debug\Projet_memory.Resources.resources
+C:\Users\fabie\Documents\Travail\S2\Periode-D\IHM\Projet\Projet\Memory-Maxime\Projet-memory\obj\Debug\Projet-memory.vbproj.GenerateResource.cache
+C:\Users\fabie\Documents\Travail\S2\Periode-D\IHM\Projet\Projet\Memory-Maxime\Projet-memory\obj\Debug\Projet-memory.vbproj.CoreCompileInputs.cache
+C:\Users\fabie\Documents\Travail\S2\Periode-D\IHM\Projet\Projet\Memory-Maxime\Projet-memory\obj\Debug\Projet-memory.exe
+C:\Users\fabie\Documents\Travail\S2\Periode-D\IHM\Projet\Projet\Memory-Maxime\Projet-memory\obj\Debug\Projet-memory.xml
+C:\Users\fabie\Documents\Travail\S2\Periode-D\IHM\Projet\Projet\Memory-Maxime\Projet-memory\obj\Debug\Projet-memory.pdb
+C:\Users\fabie\Documents\Travail\S2\Periode-D\IHM\Projet\Projet\Memory-Maxime\Projet-memory\obj\Debug\Projet-memory.vbprojAssemblyReference.cache
+C:\Users\fabie\Documents\Travail\S2\Periode-D\IHM\Projet\Projet\Memory-Maxime\Projet-memory\bin\Debug\Projet-memory.pdb
+C:\Users\fabie\Documents\Travail\S2\Periode-D\IHM\Projet\Projet\Memory-Maxime\Projet-memory\bin\Debug\Projet-memory.xml

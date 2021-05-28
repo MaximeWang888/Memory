@@ -108,6 +108,11 @@
       <DependentUpon>Application.myapp</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -129,6 +134,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -153,18 +159,29 @@
     <None Include="Card0.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BackCard.png" />
+    <Content Include="Card1.png" />
+    <Content Include="Card2.png" />
+    <Content Include="Card3.png" />
+    <Content Include="Card4.png" />
+    <Content Include="neon.JPG" />
+    <Content Include="neon1.JPG" />
+    <Content Include="neon2.JPG" />
+    <Content Include="neon3.JPG" />
+    <Content Include="neon4.JPG" />
+    <Content Include="neon5.JPG" />
     <Content Include="NewFile1.txt" />
-    <None Include="Resources\neon51.JPG" />
-    <None Include="Resources\neon41.JPG" />
-    <None Include="Resources\neon31.JPG" />
-    <None Include="Resources\neon21.JPG" />
-    <None Include="Resources\neon11.JPG" />
-    <None Include="Resources\neon6.JPG" />
-    <None Include="Resources\Card41.png" />
-    <None Include="Resources\Card31.png" />
-    <None Include="Resources\Card21.png" />
-    <None Include="Resources\Card11.png" />
-    <None Include="Resources\Card01.png" />
+    <None Include="Resources\neon5.JPG" />
+    <None Include="Resources\neon4.JPG" />
+    <None Include="Resources\neon3.JPG" />
+    <None Include="Resources\neon2.JPG" />
+    <None Include="Resources\neon1.JPG" />
+    <None Include="Resources\neon.JPG" />
+    <None Include="Resources\Card4.png" />
+    <None Include="Resources\Card3.png" />
+    <None Include="Resources\Card2.png" />
+    <None Include="Resources\Card1.png" />
+    <None Include="Resources\Card0.png" />
     <None Include="Resources\BackCard1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

@@ -18,12 +18,10 @@
         If MsgBox("Etes vous sur de réinitialiser les paramettres", MsgBoxStyle.YesNo, "") = 6 Then
             TextBoxMinute.Text = "01"
             TextBoxSecond.Text = "00"
-            CheckBox1.Checked = False
             CheckBox2.Checked = False
             CheckBox3.Checked = False
             RadioButton1.Checked = False
-            RadioButton2.Checked = False
-            PictureBox2.Size = New System.Drawing.Size(91, 126)
+            RadioButton2.Checked = True
             PictureBox1.Size = New System.Drawing.Size(91, 126)
         End If
     End Sub
@@ -31,7 +29,7 @@
 
 
     Private Sub TextBoxMinute_LostFocus(sender As Object, e As EventArgs) Handles TextBoxMinute.LostFocus, TextBoxSecond.LostFocus
-        If TextBoxMinute.Text = "" Or TextBoxMinute.Text < 1 Then
+        If TextBoxMinute.Text = "" Then
             TextBoxMinute.Text = "01"
         End If
         If TextBoxMinute.Text > 5 Then
@@ -46,13 +44,6 @@
 
     End Sub
 
-    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
-        If CheckBox1.Checked = False Then
-            CheckBox1.Text = "Non"
-        Else
-            CheckBox1.Text = "Oui"
-        End If
-    End Sub
 
     Private Sub CheckBox2_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox2.CheckedChanged
         If CheckBox2.Checked = False Then
@@ -78,5 +69,9 @@
             PictureBox2.Size = New System.Drawing.Size(121, 156)
             PictureBox1.Size = New System.Drawing.Size(91, 126)
         End If
+    End Sub
+
+    Private Sub Paramettre_Load(sender As Object, e As EventArgs) Handles Me.Load
+        RadioButton2.Checked = True
     End Sub
 End Class

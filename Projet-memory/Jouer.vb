@@ -2,8 +2,7 @@
     ''' <summary>
     ''' 
     ''' </summary>
-    Dim TempsPartie As String
-    Dim temps As Date
+    Dim temps As Integer, tempDeLaPartie As Integer, tempsTrouvCarre As Integer
     Dim value As Integer
     Dim carre As Boolean
     Dim tab(6) As Image
@@ -12,25 +11,27 @@
     Dim valeurActuelle As Integer
 
 
+
     Private Sub Jouer_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
-        TempsPartie = "#00:" & Paramettre.TextBoxMinute.Text & ":" & Paramettre.TextBoxSecond.Text & "#"
-        temps = TempsPartie
+
+        temps = Paramettre.TextBoxMinute.Text * 60 + Paramettre.TextBoxSecond.Text
+        tempDeLaPartie = temps
+        Module1.melangeTableau(Module1.tab)
         If Paramettre.RadioButton1.Checked = True Then
             tab(0) = Projet_memory.My.Resources.Resources.BackCard
             tab(1) = Projet_memory.My.Resources.Resources.Card0
-            tab(2) = Projet_memory.My.Resources.Resources.Card0
-            tab(3) = Projet_memory.My.Resources.Resources.Card0
-            tab(4) = Projet_memory.My.Resources.Resources.Card0
-            tab(5) = Projet_memory.My.Resources.Resources.Card0
+            tab(2) = Projet_memory.My.Resources.Resources.Card1
+            tab(3) = Projet_memory.My.Resources.Resources.Card2
+            tab(4) = Projet_memory.My.Resources.Resources.Card3
+            tab(5) = Projet_memory.My.Resources.Resources.Card4
         Else
-            tab(0) = Projet_memory.My.Resources.Resources.
-            tab(1) = Projet_memory.My.Resources.Resources.neon
-            tab(2) = Projet_memory.My.Resources.Resources.neon
-            tab(3) = Projet_memory.My.Resources.Resources.neon
-            tab(4) = Projet_memory.My.Resources.Resources.neon
-            tab(5) = Projet_memory.My.Resources.Resources.neon
+            tab(0) = Projet_memory.My.Resources.Resources.neon
+            tab(1) = Projet_memory.My.Resources.Resources.neon1
+            tab(2) = Projet_memory.My.Resources.Resources.neon2
+            tab(3) = Projet_memory.My.Resources.Resources.neon3
+            tab(4) = Projet_memory.My.Resources.Resources.neon4
+            tab(5) = Projet_memory.My.Resources.Resources.neon5
         End If
-
 
     End Sub
     Private Sub WaitFor(Sec%)
@@ -48,7 +49,12 @@
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub Jouer_Load(sender As Object, e As EventArgs) Handles Me.Shown
-        Me.Label_TempsRestant.Text = Format(temps, "mm:ss")
+        Dim s As String = temps \ 60 & " : "
+        If temps Mod 60 < 10 Then
+            s &= "0"
+        End If
+        s &= temps Mod 60
+        Me.Label_TempsRestant.Text = s
         Label_NomDuJoueur.Text = Memory.ComboBox1.Text
         Button_ArreterTimer.Text = "Pause"
         Button_ReprendreTimer.Text = "Reprendre"
@@ -56,6 +62,25 @@
         Timer1.Stop()
         nbDeCarteRetourner = 0
         nbCarreTrouve = 0
+
+        If Paramettre.CheckBox3.Checked = True Then
+            Dim i As Integer = 0
+            For Each ctl In GroupBox1.Controls
+                If TypeOf ctl Is PictureBox Then
+                    i += 1
+                    ctl.image = tab(GetValeur(i))
+                End If
+            Next
+            WaitFor(1)
+        End If
+
+        For Each ctl In GroupBox1.Controls
+            If TypeOf ctl Is PictureBox Then
+                ctl.Size = New Size(90, 125)
+                ctl.image = tab(0)
+                ctl.Visible = True
+            End If
+        Next
     End Sub
 
     ''' <summary>
@@ -64,13 +89,21 @@
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        temps = DateAdd(DateInterval.Second, -1, temps)
-        Me.Label_TempsRestant.Text = Format(temps, "mm:ss")
-        If temps < #00:00:10# Then
+        temps -= 1
+        'temps = DateAdd(DateInterval.Second, -1, temps)
+        Dim s As String = temps \ 60 & " : "
+        If temps Mod 60 < 10 Then
+            s &= "0"
+        End If
+        s &= temps Mod 60
+        Me.Label_TempsRestant.Text = s
+        ' Me.Label_TempsRestant.Text = Format(temps, "mm:ss")
+        If temps < 10 Then
             Label_TempsRestant.ForeColor = Color.Red
         End If
-        If temps = #00:00:00# Then
+        If temps = 0 Then
             Timer1.Stop()
+            FinDePartie()
             MsgBox("Vous avez perdu")
         End If
     End Sub
@@ -131,14 +164,7 @@
         Return Module1.GetValeur(indice)
     End Function
 
-    Private Sub Jouer_Load_1(sender As Object, e As EventArgs) Handles MyBase.Load
-        For Each ctl In Me.Controls
-            If TypeOf ctl Is PictureBox Then
-                ctl.Size = New Size(90, 125)
-                ctl.image = tab(0)
-            End If
-        Next
-    End Sub
+
     ''' <summary>
     ''' Permet de tourner la carte pour y voir le contenu 
     ''' </summary>
@@ -150,9 +176,12 @@ PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, PictureBox13.Click, Pi
         Timer1.Start()
         Dim valeur As Integer = GetValeur(GetIndice(sender))
 
-        retournerLesCartes(sender, valeur)
+
+        sender.image = tab(valeur)
+
         nbDeCarteRetourner += 1
         tabNbDeCartesRetourner.Add(GetIndice(sender))
+        sender.Enabled = False
         If nbDeCarteRetourner < 2 Then
             valeurActuelle = valeur
 
@@ -162,7 +191,7 @@ PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, PictureBox13.Click, Pi
                 ' MsgBox("les carte sont pareil")
                 If nbDeCarteRetourner = 4 Then
                     'ça fait un caréé
-
+                    tempsTrouvCarre = tempDeLaPartie - temps
                     nbCarreTrouve += 1
                     rendreEnable(tabNbDeCartesRetourner)
                     valeurActuelle = 0
@@ -171,7 +200,9 @@ PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, PictureBox13.Click, Pi
 
                     If nbCarreTrouve = 5 Then
                         Timer1.Stop()
+                        FinDePartie()
                         MsgBox("vous avez gagné")
+
                     End If
 
                 End If
@@ -180,11 +211,10 @@ PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, PictureBox13.Click, Pi
                 valeurActuelle = 0
                 nbDeCarteRetourner = 0
                 GroupBox1.Enabled = False
-                WaitFor(2)
+                WaitFor(1)
                 GroupBox1.Enabled = True
                 retournerCarte(tabNbDeCartesRetourner)
                 tabNbDeCartesRetourner.Clear()
-                MsgBox(tabNbDeCartesRetourner.Count())
 
 
                 ' tt remettre a 0 
@@ -193,16 +223,20 @@ PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, PictureBox13.Click, Pi
 
     End Sub
 
-    Sub retournerCarte(tab As ArrayList)
+    Sub FinDePartie()
+        Module1.EnregistreJoueur(Label_NomDuJoueur.Text, nbCarreTrouve, tempsTrouvCarre, tempDeLaPartie - temps)
+    End Sub
 
-        Dim a As String = ""
-        For j As Integer = 0 To tab.Count() - 1
+    Sub retournerCarte(tableau As ArrayList)
+
+        For j As Integer = 0 To tableau.Count() - 1
             Dim i As Integer = 0
             For Each ctl In GroupBox1.Controls
                 If TypeOf ctl Is PictureBox Then
                     i += 1
-                    If i = tab(j) Then
-                        ctl.image = Projet_memory.My.Resources.Resources.BackCard
+                    If i = tableau(j) Then
+                        ctl.image = tab(0)
+                        ctl.Enabled = True
                     End If
                 End If
             Next
@@ -218,29 +252,12 @@ PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, PictureBox13.Click, Pi
                     i += 1
                     If i = tab(j) Then
                         ctl.enabled = False
+                        If Paramettre.CheckBox2.Checked = True Then
+                            ctl.Visible = False
+                        End If
                     End If
                 End If
             Next
         Next
     End Sub
-
-
-
-    Sub retournerLesCartes(sender As Object, valeur As Integer)
-        'If valeur = 1 Then
-        '    sender.image = Projet_memory.My.Resources.Resources.Capture1
-        'ElseIf valeur = 2 Then
-        '    sender.image = Projet_memory.My.Resources.Resources.Capture2
-
-        'ElseIf valeur = 3 Then
-        '    sender.image = Projet_memory.My.Resources.Resources.Capture3
-        'ElseIf valeur = 4 Then
-        '    sender.image = Projet_memory.My.Resources.Resources.Capture4
-
-        'ElseIf valeur = 5 Then
-        '    sender.image = Projet_memory.My.Resources.Resources.Capture
-        'End If
-        sender.image = tab(valeur)
-    End Sub
-
 End Class

@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Paramettre
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Paramettre
     'REMARQUE : la procédure suivante est requise par le Concepteur Windows Form
     'Elle peut être modifiée à l'aide du Concepteur Windows Form.  
     'Ne la modifiez pas à l'aide de l'éditeur de code.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.ButtonReset = New System.Windows.Forms.Button()
         Me.ButtonRetour = New System.Windows.Forms.Button()
@@ -29,8 +29,6 @@ Partial Class Paramettre
         Me.TextBoxSecond = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
@@ -123,28 +121,6 @@ Partial Class Paramettre
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Seconds"
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Showcard Gothic", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(64, 100)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(345, 18)
-        Me.Label4.TabIndex = 2
-        Me.Label4.Text = "Les cartes se retourne au bout d'un moment "
-        '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Font = New System.Drawing.Font("Showcard Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.Location = New System.Drawing.Point(415, 101)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(50, 18)
-        Me.CheckBox1.TabIndex = 4
-        Me.CheckBox1.Text = "Non"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
         'PictureBox2
         '
         Me.PictureBox2.Image = Global.Projet_memory.My.Resources.Resources.Capture4
@@ -194,7 +170,7 @@ Partial Class Paramettre
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Showcard Gothic", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(64, 138)
+        Me.Label5.Location = New System.Drawing.Point(64, 111)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(379, 18)
         Me.Label5.TabIndex = 2
@@ -204,7 +180,7 @@ Partial Class Paramettre
         '
         Me.CheckBox2.AutoSize = True
         Me.CheckBox2.Font = New System.Drawing.Font("Showcard Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox2.Location = New System.Drawing.Point(449, 139)
+        Me.CheckBox2.Location = New System.Drawing.Point(449, 112)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(50, 18)
         Me.CheckBox2.TabIndex = 4
@@ -216,7 +192,7 @@ Partial Class Paramettre
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Showcard Gothic", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label6.Location = New System.Drawing.Point(64, 178)
+        Me.Label6.Location = New System.Drawing.Point(64, 160)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(320, 18)
         Me.Label6.TabIndex = 2
@@ -226,7 +202,7 @@ Partial Class Paramettre
         '
         Me.CheckBox3.AutoSize = True
         Me.CheckBox3.Font = New System.Drawing.Font("Showcard Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox3.Location = New System.Drawing.Point(390, 178)
+        Me.CheckBox3.Location = New System.Drawing.Point(390, 160)
         Me.CheckBox3.Name = "CheckBox3"
         Me.CheckBox3.Size = New System.Drawing.Size(50, 18)
         Me.CheckBox3.TabIndex = 4
@@ -244,14 +220,12 @@ Partial Class Paramettre
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.CheckBox3)
         Me.Controls.Add(Me.CheckBox2)
-        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.TextBoxSecond)
         Me.Controls.Add(Me.TextBoxMinute)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ButtonRetour)
         Me.Controls.Add(Me.ButtonReset)
@@ -271,8 +245,6 @@ Partial Class Paramettre
     Friend WithEvents TextBoxSecond As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents RadioButton2 As RadioButton
