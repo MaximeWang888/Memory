@@ -1,20 +1,23 @@
 ﻿Public Class Jouer
     ''' <summary>
-    ''' 
+    ''' Des attributs du formulaire utiles pour la suite
     ''' </summary>
-    Dim TempsPartie As String
-    Dim temps As Date
+    Dim temps As Integer, tempDeLaPartie As Integer, tempsTrouvCarre As Integer
     Dim value As Integer
-    Dim carre As Boolean
     Dim tab(6) As Image
     Dim nbDeCarteRetourner As Integer, nbCarreTrouve As Integer
     Dim tabNbDeCartesRetourner As New ArrayList
     Dim valeurActuelle As Integer
 
 
+    ''' <summary>
+    ''' Permet d'initialiser toutes les images.
+    ''' </summary>
+    ''' <param name="sender"></param>
+    ''' <param name="e"></param>
     Private Sub Jouer_VisibleChanged(sender As Object, e As EventArgs) Handles Me.VisibleChanged
-        TempsPartie = "#00:" & Paramettre.TextBoxMinute.Text & ":" & Paramettre.TextBoxSecond.Text & "#"
-        temps = TempsPartie
+        temps = Paramettre.TextBoxMinute.Text * 60 + Paramettre.TextBoxSecond.Text
+        tempDeLaPartie = temps
         Module1.melangeTableau(Module1.tab)
         If Paramettre.RadioButton1.Checked = True Then
             tab(0) = Projet_memory.My.Resources.Resources.BackCard
@@ -31,8 +34,12 @@
             tab(4) = Projet_memory.My.Resources.Resources.neon4
             tab(5) = Projet_memory.My.Resources.Resources.neon5
         End If
-
     End Sub
+
+    ''' <summary>
+    ''' Permet de faire une pause de quelques secondes 
+    ''' </summary>
+    ''' <param name="Sec%"></param>
     Private Sub WaitFor(Sec%)
         Dim Dt As DateTime = DateTime.Now
         Do
@@ -40,15 +47,18 @@
         Loop While Dt.AddSeconds(Sec) > DateTime.Now
     End Sub
 
-    'DateInterval.minute = 
-
     ''' <summary>
-    '''  
+    ''' Permet d'initialiser toutes les données sauf les images qui sont initialisés autres part.
     ''' </summary>
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub Jouer_Load(sender As Object, e As EventArgs) Handles Me.Shown
-        Me.Label_TempsRestant.Text = Format(temps, "mm:ss")
+        Dim s As String = temps \ 60 & " : "
+        If temps Mod 60 < 10 Then
+            s &= "0"
+        End If
+        s &= temps Mod 60
+        Me.Label_TempsRestant.Text = s
         Label_NomDuJoueur.Text = Memory.ComboBox1.Text
         Button_ArreterTimer.Text = "Pause"
         Button_ReprendreTimer.Text = "Reprendre"
@@ -83,14 +93,22 @@
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        temps = DateAdd(DateInterval.Second, -1, temps)
-        Me.Label_TempsRestant.Text = Format(temps, "mm:ss")
-        If temps < #00:00:10# Then
+        temps -= 1
+        Dim s As String = temps \ 60 & " : "
+        If temps Mod 60 < 10 Then
+            s &= "0"
+        End If
+        s &= temps Mod 60
+        Me.Label_TempsRestant.Text = s
+        If temps < 10 Then
             Label_TempsRestant.ForeColor = Color.Red
         End If
-        If temps = #00:00:00# Then
+        If temps = 0 Then
             Timer1.Stop()
+            FinDePartie()
             MsgBox("Vous avez perdu")
+            Me.Close()
+            Memory.Show()
         End If
     End Sub
 
@@ -100,19 +118,11 @@
     ''' <param name="sender"></param>
     ''' <param name="e"></param>
     Private Sub Button_Abandon_Click(sender As Object, e As EventArgs) Handles Button_Abandon.Click
-        Me.Close()
-        Memory.Show()
-    End Sub
-
-    ''' <summary>
-    ''' 
-    ''' </summary>
-    ''' <param name="sender"></param>
-    ''' <param name="e"></param>
-    Private Sub Form_MemoryClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
-        If MsgBox("Voulez vous abandonner la partie en cours ?", vbQuestion + vbYesNo + vbDefaultButton2, "Abandon") = vbNo Then
-            e.Cancel = True
+        If MsgBox("Voulez vous abandonner la partie en cours ?", vbQuestion + vbYesNo + vbDefaultButton2, "Abandon") = vbYes Then
+            Me.Close()
+            Memory.Show()
         End If
+
     End Sub
 
     ''' <summary>
@@ -146,6 +156,12 @@
         Next
         Return -1
     End Function
+
+    ''' <summary>
+    ''' Permet de connaître l'indice se trouvant dans le tableau d'images
+    ''' </summary>
+    ''' <param name="indice">l'indice de l'image dans le tableau enregistré dans Module1</param>
+    ''' <returns></returns>
     Function GetValeur(indice As Integer) As Integer
         Return Module1.GetValeur(indice)
     End Function
@@ -163,18 +179,19 @@ PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, PictureBox13.Click, Pi
         Dim valeur As Integer = GetValeur(GetIndice(sender))
 
         sender.image = tab(valeur)
+
         nbDeCarteRetourner += 1
         tabNbDeCartesRetourner.Add(GetIndice(sender))
+        sender.Enabled = False
+
         If nbDeCarteRetourner < 2 Then
             valeurActuelle = valeur
-
         Else
             If valeurActuelle = valeur Then
-                ' c les meme catrte
-                ' MsgBox("les carte sont pareil")
+                ' ce sont les mêmes cartes
                 If nbDeCarteRetourner = 4 Then
-                    'ça fait un caréé
-
+                    ' ça fait un carée
+                    tempsTrouvCarre = tempDeLaPartie - temps
                     nbCarreTrouve += 1
                     rendreEnable(tabNbDeCartesRetourner)
                     valeurActuelle = 0
@@ -183,7 +200,10 @@ PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, PictureBox13.Click, Pi
 
                     If nbCarreTrouve = 5 Then
                         Timer1.Stop()
+                        FinDePartie()
                         MsgBox("vous avez gagné")
+                        Me.Close()
+                        Memory.Show()
                     End If
 
                 End If
@@ -192,18 +212,26 @@ PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, PictureBox13.Click, Pi
                 valeurActuelle = 0
                 nbDeCarteRetourner = 0
                 GroupBox1.Enabled = False
-                WaitFor(2)
+                WaitFor(1)
                 GroupBox1.Enabled = True
                 retournerCarte(tabNbDeCartesRetourner)
                 tabNbDeCartesRetourner.Clear()
-
-
-                ' tt remettre a 0 
+                ' tt remettre à 0 
             End If
         End If
-
     End Sub
 
+    ''' <summary>
+    ''' Permet d'enregistrer le joueur lors de la fin de la partie dans la base
+    ''' </summary>
+    Sub FinDePartie()
+        Module1.EnregistreJoueur(Label_NomDuJoueur.Text, nbCarreTrouve, tempsTrouvCarre, 1, tempDeLaPartie - temps)
+    End Sub
+
+    ''' <summary>
+    ''' Permet de retourner la carte
+    ''' </summary>
+    ''' <param name="tableau">Le tableau d'image</param>
     Sub retournerCarte(tableau As ArrayList)
 
         For j As Integer = 0 To tableau.Count() - 1
@@ -213,12 +241,17 @@ PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, PictureBox13.Click, Pi
                     i += 1
                     If i = tableau(j) Then
                         ctl.image = tab(0)
+                        ctl.Enabled = True
                     End If
                 End If
             Next
         Next
     End Sub
 
+    ''' <summary>
+    ''' Permet de rendre enable une ou plusieurs pictureBox d'un tableau 
+    ''' </summary>
+    ''' <param name="tab">le tableau d'image</param>
     Sub rendreEnable(tab As ArrayList)
 
         For j As Integer = 0 To tab.Count() - 1
@@ -236,4 +269,5 @@ PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, PictureBox13.Click, Pi
             Next
         Next
     End Sub
+
 End Class

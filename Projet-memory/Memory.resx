@@ -123,10 +123,14 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="Label_Entrezvotrenom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>90, 137</value>
+    <value>120, 169</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Label_Entrezvotrenom.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="Label_Entrezvotrenom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 13</value>
+    <value>124, 17</value>
   </data>
   <data name="Label_Entrezvotrenom.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -144,16 +148,19 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label_Entrezvotrenom.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="Button_Jouer.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="Button_Jouer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>214, 200</value>
+    <value>285, 246</value>
+  </data>
+  <data name="Button_Jouer.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="Button_Jouer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>100, 28</value>
   </data>
   <data name="Button_Jouer.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -171,13 +178,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Button_Jouer.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="ButtonOptions.Location" type="System.Drawing.Point, System.Drawing">
-    <value>214, 243</value>
+    <value>285, 299</value>
+  </data>
+  <data name="ButtonOptions.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="ButtonOptions.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>100, 28</value>
   </data>
   <data name="ButtonOptions.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -195,13 +205,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ButtonOptions.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="ButtonScores.Location" type="System.Drawing.Point, System.Drawing">
-    <value>214, 291</value>
+    <value>285, 358</value>
+  </data>
+  <data name="ButtonScores.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="ButtonScores.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>100, 28</value>
   </data>
   <data name="ButtonScores.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -219,13 +232,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ButtonScores.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="ButtonQuitter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>214, 336</value>
+    <value>285, 414</value>
+  </data>
+  <data name="ButtonQuitter.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="ButtonQuitter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
+    <value>100, 28</value>
   </data>
   <data name="ButtonQuitter.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -243,7 +259,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ButtonQuitter.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -252,10 +268,13 @@
     <value>Bauhaus 93, 45pt, style=Bold</value>
   </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 34</value>
+    <value>56, 42</value>
+  </data>
+  <data name="Label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>299, 68</value>
+    <value>372, 84</value>
   </data>
   <data name="Label2.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -273,7 +292,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -282,14 +301,16 @@
     <value>Bauhaus 93, 10pt</value>
   </data>
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>211, 106</value>
+    <value>281, 130</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
   <data name="Label3.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>Yes</value>
   </data>
   <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 16</value>
+    <value>175, 19</value>
   </data>
   <data name="Label3.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -307,7 +328,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <metadata name="ContextMenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -322,13 +343,13 @@
     <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ComboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>201, 137</value>
+    <value>268, 169</value>
   </data>
   <data name="ComboBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+    <value>3, 2, 3, 2</value>
   </data>
   <data name="ComboBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 21</value>
+    <value>235, 24</value>
   </data>
   <data name="ComboBox1.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -343,46 +364,22 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ComboBox1.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="LabelTest.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="LabelTest.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 253</value>
-  </data>
-  <data name="LabelTest.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 13</value>
-  </data>
-  <data name="LabelTest.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="LabelTest.Text" xml:space="preserve">
-    <value>Vide</value>
-  </data>
-  <data name="&gt;&gt;LabelTest.Name" xml:space="preserve">
-    <value>LabelTest</value>
-  </data>
-  <data name="&gt;&gt;LabelTest.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LabelTest.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;LabelTest.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
+    <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>546, 413</value>
+    <value>728, 508</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Form1</value>
+    <value>Memory</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Memory</value>
