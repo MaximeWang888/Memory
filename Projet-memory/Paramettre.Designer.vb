@@ -68,12 +68,12 @@ Partial Class Paramettre
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Showcard Gothic", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(93, 69)
+        Me.Label1.Location = New System.Drawing.Point(85, 73)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(163, 21)
+        Me.Label1.Size = New System.Drawing.Size(175, 21)
         Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Tempde la partie "
+        Me.Label1.Text = "Temps de la partie "
         '
         'TextBoxMinute
         '
