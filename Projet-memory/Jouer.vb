@@ -225,7 +225,7 @@ PictureBox10.Click, PictureBox9.Click, PictureBox1.Click, PictureBox13.Click, Pi
     ''' Permet d'enregistrer le joueur lors de la fin de la partie dans la base
     ''' </summary>
     Sub FinDePartie()
-        Module1.EnregistreJoueur(Label_NomDuJoueur.Text, nbCarreTrouve, tempsTrouvCarre, 1, tempDeLaPartie - temps)
+        Module1.EnregistreJoueur(Replace(Label_NomDuJoueur.Text, " ", ""), nbCarreTrouve, tempsTrouvCarre, 1, tempDeLaPartie - temps)
     End Sub
 
     ''' <summary>
