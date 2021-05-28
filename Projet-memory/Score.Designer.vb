@@ -109,6 +109,7 @@ Partial Class Score
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1055, 649)
+        Me.ControlBox = False
         Me.Controls.Add(Me.btnRetour)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.DataGridView1)

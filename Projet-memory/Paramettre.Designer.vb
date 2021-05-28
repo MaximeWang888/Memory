@@ -45,7 +45,7 @@ Partial Class Paramettre
         '
         Me.ButtonReset.Font = New System.Drawing.Font("Showcard Gothic", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonReset.Location = New System.Drawing.Point(244, 575)
-        Me.ButtonReset.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonReset.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonReset.Name = "ButtonReset"
         Me.ButtonReset.Size = New System.Drawing.Size(164, 28)
         Me.ButtonReset.TabIndex = 0
@@ -56,7 +56,7 @@ Partial Class Paramettre
         '
         Me.ButtonRetour.Font = New System.Drawing.Font("Showcard Gothic", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonRetour.Location = New System.Drawing.Point(196, 629)
-        Me.ButtonRetour.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ButtonRetour.Margin = New System.Windows.Forms.Padding(4)
         Me.ButtonRetour.Name = "ButtonRetour"
         Me.ButtonRetour.Size = New System.Drawing.Size(256, 28)
         Me.ButtonRetour.TabIndex = 1
@@ -80,7 +80,7 @@ Partial Class Paramettre
         Me.TextBoxMinute.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBoxMinute.Font = New System.Drawing.Font("Showcard Gothic", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxMinute.Location = New System.Drawing.Point(285, 71)
-        Me.TextBoxMinute.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBoxMinute.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxMinute.MaxLength = 2
         Me.TextBoxMinute.Name = "TextBoxMinute"
         Me.TextBoxMinute.Size = New System.Drawing.Size(40, 21)
@@ -96,10 +96,10 @@ Partial Class Paramettre
         Me.TextBoxSecond.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.TextBoxSecond.Font = New System.Drawing.Font("Showcard Gothic", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxSecond.Location = New System.Drawing.Point(432, 73)
-        Me.TextBoxSecond.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBoxSecond.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxSecond.MaxLength = 2
         Me.TextBoxSecond.Name = "TextBoxSecond"
-        Me.TextBoxSecond.Size = New System.Drawing.Size(44, 21)
+        Me.TextBoxSecond.Size = New System.Drawing.Size(0, 21)
         Me.TextBoxSecond.TabIndex = 2
         Me.TextBoxSecond.Text = "00"
         Me.TextBoxSecond.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
@@ -132,7 +132,7 @@ Partial Class Paramettre
         '
         Me.PictureBox2.Image = Global.Projet_memory.My.Resources.Resources.Capture4
         Me.PictureBox2.Location = New System.Drawing.Point(424, 294)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(121, 155)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -145,7 +145,7 @@ Partial Class Paramettre
         Me.PictureBox1.Image = Global.Projet_memory.My.Resources.Resources.BackCard
         Me.PictureBox1.InitialImage = Global.Projet_memory.My.Resources.Resources.BackCard
         Me.PictureBox1.Location = New System.Drawing.Point(128, 294)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(121, 155)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -157,7 +157,7 @@ Partial Class Paramettre
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.Checked = True
         Me.RadioButton2.Location = New System.Drawing.Point(425, 510)
-        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(4)
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(109, 21)
         Me.RadioButton2.TabIndex = 10
@@ -169,7 +169,7 @@ Partial Class Paramettre
         '
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Location = New System.Drawing.Point(129, 510)
-        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(4)
         Me.RadioButton1.Name = "RadioButton1"
         Me.RadioButton1.Size = New System.Drawing.Size(107, 21)
         Me.RadioButton1.TabIndex = 10
@@ -193,7 +193,7 @@ Partial Class Paramettre
         Me.CheckBox2.AutoSize = True
         Me.CheckBox2.Font = New System.Drawing.Font("Showcard Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox2.Location = New System.Drawing.Point(599, 138)
-        Me.CheckBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CheckBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(58, 22)
         Me.CheckBox2.TabIndex = 4
@@ -217,7 +217,7 @@ Partial Class Paramettre
         Me.CheckBox3.AutoSize = True
         Me.CheckBox3.Font = New System.Drawing.Font("Showcard Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CheckBox3.Location = New System.Drawing.Point(520, 197)
-        Me.CheckBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CheckBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.CheckBox3.Name = "CheckBox3"
         Me.CheckBox3.Size = New System.Drawing.Size(58, 22)
         Me.CheckBox3.TabIndex = 4
@@ -228,7 +228,8 @@ Partial Class Paramettre
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(884, 690)
+        Me.ClientSize = New System.Drawing.Size(760, 690)
+        Me.ControlBox = False
         Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.RadioButton2)
         Me.Controls.Add(Me.PictureBox2)
@@ -244,7 +245,7 @@ Partial Class Paramettre
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ButtonRetour)
         Me.Controls.Add(Me.ButtonReset)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Paramettre"
         Me.Text = "Option"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
